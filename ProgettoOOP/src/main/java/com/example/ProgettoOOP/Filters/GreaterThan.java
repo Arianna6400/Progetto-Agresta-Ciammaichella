@@ -5,20 +5,16 @@ import java.util.List;
 import java.util.Vector;
 
 import com.example.ProgettoOOP.Types.UVData;
-import com.example.ProgettoOOP.util.Reader;
-import com.google.gson.Gson;
 
 public class GreaterThan {
-	public static String getGreater (double num) throws IOException {
-		Vector<UVData> fin = new Vector<UVData>();
-		List<UVData> data = Reader.getVectorFile();
-		for(UVData d : data) {
+
+	public static List<UVData> getGreater (double num, List<UVData> dataset) throws IOException {
+		List<UVData> fin = new Vector<UVData>();
+		for(UVData d : dataset) {
 			if(d.value>num) {
 				fin.add(d);
 			}
 		}
-		Gson gson= new Gson();
-		String filteredJson = gson.toJson(fin);
-		return filteredJson;
+		return fin;
 	}
 }
