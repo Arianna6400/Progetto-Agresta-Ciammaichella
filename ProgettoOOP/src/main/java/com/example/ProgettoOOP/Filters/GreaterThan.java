@@ -8,9 +8,9 @@ import com.example.ProgettoOOP.Types.UVData;
 
 public class GreaterThan {
 
-	public static List<UVData> getGreater (double num, List<UVData> dataset) throws IOException {
+	public static List<UVData> getGreater (double num, List<UVData> DataSet) throws IOException {
 		List<UVData> fin = new Vector<UVData>();
-		for(UVData d : dataset) {
+		for(UVData d : DataSet) {
 			if(d.value>num) {
 				fin.add(d);
 			}
