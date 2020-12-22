@@ -50,7 +50,7 @@ public class Controller {
     }
 	@PostMapping("/test")
 		public String test (@RequestBody test test) throws IOException {
-			return testfilter.getFilter(test.Value);
+			return testfilter.getFilter(test);
 	}
 
 }

@@ -5,9 +5,11 @@ import java.util.List;
 import java.util.Vector;
 
 import com.example.ProgettoOOP.Types.UVData;
+import com.example.ProgettoOOP.util.Reader;
+import com.google.gson.Gson;
 
 public class LessThan {
-	public static List<UVData> getLess (List<UVData> DataSet, double num) throws IOException {
+	public static List<UVData> getLess (List<UVData> DataSet,double num) throws IOException {
 		List<UVData> fin = new Vector<UVData>();
 		for(UVData d : DataSet) {
 			if(d.value<num) {

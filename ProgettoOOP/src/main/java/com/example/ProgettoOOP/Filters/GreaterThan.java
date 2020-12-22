@@ -5,10 +5,11 @@ import java.util.List;
 import java.util.Vector;
 
 import com.example.ProgettoOOP.Types.UVData;
+import com.example.ProgettoOOP.util.Reader;
+import com.google.gson.Gson;
 
 public class GreaterThan {
-
-	public static List<UVData> getGreater (double num, List<UVData> DataSet) throws IOException {
+	public static List<UVData> getGreater (List<UVData> DataSet,double num) throws IOException {
 		List<UVData> fin = new Vector<UVData>();
 		for(UVData d : DataSet) {
 			if(d.value>num) {
