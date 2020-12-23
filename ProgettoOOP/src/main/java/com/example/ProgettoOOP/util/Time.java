@@ -1,7 +1,5 @@
 package com.example.ProgettoOOP.util;
 
-//import com.example.ProgettoOOP.Types.Value;
-//import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Time {
 	public static long getTimeGion(long Time) {
@@ -19,8 +17,4 @@ public class Time {
 	public static long getTime10g(long Time) {
 		return Time-(24*60*60*10);
 	}
-	/*public static double test(Object value) {
-		Value test = new ObjectMapper().convertValue(value, Value.class);
-		return test.getGreater();
-	}*/
 }

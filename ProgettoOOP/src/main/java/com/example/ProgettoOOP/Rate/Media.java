@@ -1,5 +1,7 @@
 package com.example.ProgettoOOP.Rate;
 import java.util.Vector;
+
+import com.example.ProgettoOOP.Types.UVData;
 public class Media {
 
  
@@ -8,11 +10,11 @@ public class Media {
     public Media(Vector <Double> UVDataSet) {
         this.UVDataSet=UVDataSet;
     }
-    public static double getMedia(Vector<Double> UVDataSet) {
+    public static double getMedia(Vector<UVData> UVDataSet) {
         double sum=0, media=0;
-        for(double d: UVDataSet) {
+        for(UVData d: UVDataSet) {
             {
-                sum+=d;
+                sum+=d.value;
             }
             media=sum/(UVDataSet.size());
         }

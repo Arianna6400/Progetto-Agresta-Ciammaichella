@@ -2,6 +2,7 @@ package com.example.ProgettoOOP.Controller;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +13,6 @@ import com.example.ProgettoOOP.test.DataBase;
 import com.example.ProgettoOOP.util.Reader;
 import com.example.ProgettoOOP.util.Time;
 import com.example.ProgettoOOP.util.Writer;
-import com.example.ProgettoOOP.util.testfilter;
 import com.example.ProgettoOOP.Rate.Varianza;
 import com.example.ProgettoOOP.Service.Calculator;
 import com.example.ProgettoOOP.Service.*;
@@ -20,7 +20,6 @@ import com.example.ProgettoOOP.Service.StatsCreator;
 import com.example.ProgettoOOP.Types.*;
 import com.example.ProgettoOOP.Types.Result;
 import com.example.ProgettoOOP.Types.UVData;
-import com.example.ProgettoOOP.Types.Value;
 import com.example.ProgettoOOP.owapi.getUV;
 
 
@@ -48,9 +47,9 @@ public class Controller {
     public String  getData() throws IOException {
         return DataBase.getUVData();
     }
-	@PostMapping("/test")
-		public String test (@RequestBody test test) throws IOException {
-			return testfilter.getFilter(test);
-	}
+	/*@PostMapping("/test")
+		public HashMap<String, Object> test (@RequestBody Object test) throws IOException {
+			return testfilter.getTestFilter(test);
+	}*/
 
 }

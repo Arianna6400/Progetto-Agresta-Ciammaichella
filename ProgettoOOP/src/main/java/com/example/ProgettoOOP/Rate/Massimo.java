@@ -1,6 +1,8 @@
 package com.example.ProgettoOOP.Rate;
 import java.util.Vector;
 
+import com.example.ProgettoOOP.Types.UVData;
+
 public class Massimo {
 
  
@@ -9,11 +11,11 @@ public class Massimo {
     public Massimo(Vector<Double> UVDataSet) {
             this.UVDataSet = UVDataSet;
     }
-    public static double getMassimo(Vector<Double> UVDataSet) {
-        double max=UVDataSet.firstElement();
-        for(double d : UVDataSet) {
-            if(d>max) {
-                max=d;
+    public static double getMassimo(Vector<UVData> UVDataSet) {
+        double max=UVDataSet.firstElement().value;
+        for(UVData d : UVDataSet) {
+            if(d.value>max) {
+                max=d.value;
             }
         }
         return max;
