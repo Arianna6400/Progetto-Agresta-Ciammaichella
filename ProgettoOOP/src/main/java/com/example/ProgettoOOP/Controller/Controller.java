@@ -48,7 +48,7 @@ public class Controller {
     public String  getData() throws IOException {
         return DataBase.getUVData();
     }
-	@PostMapping("/test")
+	@PostMapping("/data")
 		public Vector<UVData> test (@RequestBody String test) throws IOException {
 			return BodyParser.getBody(test);
 	}

@@ -1,20 +1,17 @@
 package com.example.ProgettoOOP.util;
 
+import java.util.Vector;
+
+import com.example.ProgettoOOP.Types.UVData;
 
 public class Time {
-	public static long getTimeGion(long Time) {
-		return Time-(24*60*60);
+	public static Vector<Long> getRange(Vector<UVData> FilteredVector ,Vector<Integer> Range) {
+		long start=(FilteredVector.lastElement().date)-(24*60*60*Range.firstElement());
+		long stop=(FilteredVector.lastElement().date)-(24*60*60*Range.lastElement());
+		Vector<Long> FilteredRange = new Vector<Long>();
+		FilteredRange.add(start);
+		FilteredRange.add(stop);
+		return FilteredRange;
 	}
-	public static long getTimeSett(long Time) {
-		return Time-(24*60*60*7);
-	}
-	public static long getTimeMes(long Time) {
-		return Time-(24*60*60*30);
-	}
-	public static long getTime5g(long Time) {
-		return Time-(24*60*60*5);
-	}
-	public static long getTime10g(long Time) {
-		return Time-(24*60*60*10);
-	}
+	
 }

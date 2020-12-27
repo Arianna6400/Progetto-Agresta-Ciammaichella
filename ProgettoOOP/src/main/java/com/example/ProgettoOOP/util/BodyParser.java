@@ -9,25 +9,69 @@ import com.google.gson.Gson;
 
 public class BodyParser {
 	public static Vector<UVData> getBody(String test) throws IOException {
-		Vector<UVData> FilteredVector = new Vector<UVData>();
+		boolean flag= false;
 		Gson gson = new Gson();
 		Body body = gson.fromJson(test, Body.class);
 		Vector<UVData> DataSet= Reader.getVectorFile();
-		if (body.Cities.isEmpty()) {
-			FilteredVector =  DataSet;
-		}
-		else {
+		Vector<UVData> toRemove=new Vector<UVData>();
+		if(!body.Cities.isEmpty()) {
 			for(UVData d : DataSet) {
 				for(String name : body.Cities) {
 					if(d.name.equals(name)) {
-						FilteredVector.add(d);
+						flag=true;
+					}
+				}
+				if(!flag) {
+					toRemove.add(d);
+				}
+				flag=false;
+			}
+		}
+		DataSet.removeAll(toRemove);
+		toRemove.clear();
+		if(!body.Range.isEmpty()) {
+			Vector<Long> Range = Time.getRange(DataSet, body.Range);
+			for(UVData d : DataSet) {
+				if(d.date>Range.firstElement() || d.date<Range.lastElement()) {
+					toRemove.add(d);
+				}
+			}
+		}
+		DataSet.removeAll(toRemove);
+		toRemove.clear();
+		if(body.Value != null) {
+			if(body.Value.Greater != 0) {
+				for(UVData d: DataSet) {
+					if(d.value<body.Value.Greater) {
+						toRemove.add(d);
+					}
+				}
+			}
+			else if(body.Value.Less != 0) {
+				for(UVData d: DataSet) {
+					if(d.value>body.Value.Less) {
+						toRemove.add(d);
+					}
+				}
+			}
+			else if(!body.Value.Included.isEmpty()) {
+				for(UVData d: DataSet) {
+					if(d.value<body.Value.Included.firstElement() || d.value>body.Value.Included.lastElement()) {
+						toRemove.add(d);
+					}
+				}
+			}
+			else if(!body.Value.NotIncluded.isEmpty()) {
+				for(UVData d: DataSet) {
+					if(d.value>body.Value.NotIncluded.firstElement() && d.value<body.Value.NotIncluded.lastElement()) {
+						toRemove.add(d);
 					}
 				}
 			}
 		}
-		
-		
-		return FilteredVector;
+		DataSet.removeAll(toRemove);
+		toRemove.clear();
+		return DataSet;
 	}
 	
 }
