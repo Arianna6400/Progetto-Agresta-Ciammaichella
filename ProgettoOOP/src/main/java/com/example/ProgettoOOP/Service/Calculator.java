@@ -16,7 +16,7 @@ public class Calculator {
 	 static Vector<UVData> Milan = new Vector<UVData>();
 	 static Vector<UVData> Rome = new Vector<UVData>();
      static Vector<UVData> Venice = new Vector<UVData>();
-	public static void ListParser(List<UVData> DataList) {
+	public static void ListParser(Vector<UVData> DataList) {
 		for(UVData d : DataList) {
 			if(d.name.equals("Pescara")) {
 				Pescara.add(d);

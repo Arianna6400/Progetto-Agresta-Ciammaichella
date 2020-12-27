@@ -24,7 +24,7 @@ public class DataBase {
 	
 		public static String  getUVData() throws IOException {
 		       
-	        List<UVData> DataList = Reader.getVectorFile();
+	        Vector<UVData> DataList = Reader.getVectorFile();
 	        String strJson = gson.toJson(DataList);
 	        return strJson;
 	     }

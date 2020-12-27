@@ -18,9 +18,9 @@ import com.google.gson.stream.JsonToken;
 
 
 public class Reader {
-	public static List<UVData> getVectorFile() throws IOException{
+	public static Vector<UVData> getVectorFile() throws IOException{
 	BufferedReader reader = Files.newBufferedReader(Paths.get("uv.json"));
-	List<UVData> DataList = new Gson().fromJson(reader, new TypeToken<List<UVData>>() {}.getType());
+	Vector<UVData> DataList = new Gson().fromJson(reader, new TypeToken<Vector<UVData>>() {}.getType());
 	reader.close();
 	return DataList;
 	}

@@ -35,7 +35,7 @@ public class Controller {
 
 	@GetMapping("/stats")
 	public String getStats() throws IOException   {
-		List<UVData> test = Reader.getVectorFile();	
+		Vector<UVData> test = Reader.getVectorFile();	
 		Calculator.ListParser(test);
 		Result Pes= DataCity.getResult(Calculator.getPescara());
 		Result Anc= DataCity.getResult(Calculator.getAncona());
@@ -49,7 +49,7 @@ public class Controller {
         return DataBase.getUVData();
     }
 	@PostMapping("/test")
-		public Vector<String> test (@RequestBody String test) throws IOException {
+		public Vector<UVData> test (@RequestBody String test) throws IOException {
 			return BodyParser.getBody(test);
 	}
 
