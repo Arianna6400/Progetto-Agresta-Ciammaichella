@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.ProgettoOOP.test.DataBase;
+import com.example.ProgettoOOP.util.BodyParser;
 import com.example.ProgettoOOP.util.Reader;
 import com.example.ProgettoOOP.util.Time;
 import com.example.ProgettoOOP.util.Writer;
@@ -47,9 +48,9 @@ public class Controller {
     public String  getData() throws IOException {
         return DataBase.getUVData();
     }
-	/*@PostMapping("/test")
-		public HashMap<String, Object> test (@RequestBody Object test) throws IOException {
-			return testfilter.getTestFilter(test);
-	}*/
+	@PostMapping("/test")
+		public Vector<String> test (@RequestBody String test) throws IOException {
+			return BodyParser.getBody(test);
+	}
 
 }
