@@ -8,8 +8,5 @@ La nostra applicazione permette di richiedere tramite API REST(GET o POST) con d
  - restituzione dei DATA, ovvero l'intero dataset, in formato JSON;
  - restituzione dei DATA filtrati, cioè il dataset con i filtri applicati, in formato JSON;
  - restituzione delle STATS, cioè le statistiche generate dal programma sul dataset, in formato JSON;
- - restituzione delle STATS filtrate, cioè le statistiche filtrate generate dal programma sul dataset, in formato JSON;
-
-Per avere uno sguardo generale sull'utilizzo delle rotte:
-![Per avere uno sguardo generale sull'utilizzo delle rotte:](https://photos.app.goo.gl/i64t4N6wp8YyHUaA9)
+ - restituzione delle STATS filtrate, cioè le statistiche filtrate generate dal programma sul dataset, in formato JSON.
 
