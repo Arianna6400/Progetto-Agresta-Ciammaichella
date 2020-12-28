@@ -6,7 +6,7 @@ Il Web Service da noi implementato permette all'utente di scaricare i dati dei r
 La nostra applicazione permette di richiedere tramite API REST(GET o POST) con diverse rotte:
  - restituzione dei METADATA, cioè l'elenco degli attributi descritti per nome, campo di ricerca e tipo, in formato JSON;
  - restituzione dei DATA, ovvero l'intero dataset, in formato JSON;
- - restituzione dei DATA filtrati, cioè il dataset con i filtri applicati, in fromato JSON;
+ - restituzione dei DATA filtrati, cioè il dataset con i filtri applicati, in formato JSON;
  - restituzione delle STATS, cioè le statistiche generate dal programma sul dataset, in formato JSON;
  - restituzione delle STATS filtrate, cioè le statistiche filtrate generate dal programma sul dataset, in formato JSON;
 
