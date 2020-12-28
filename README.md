@@ -11,4 +11,3 @@ La nostra applicazione permette di richiedere tramite API REST(GET o POST) con d
  - restituzione delle STATS filtrate, cioè le statistiche filtrate generate dal programma sul dataset, in formato JSON;
 
 Per avere uno sguardo generale sull'utilizzo delle rotte:
-![](https://photos.google.com/photo/AF1QipM-ejk7B0B-VXfKB6pMWeJ_BBgPwtcy9nW7wVv5)
