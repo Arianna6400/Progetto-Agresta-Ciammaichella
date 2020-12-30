@@ -7,11 +7,11 @@ import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 
-public class BodyParser {
+public class DataParser {
 	public static Vector<UVData> getBody(String test) throws IOException {
 		boolean flag= false;
 		Gson gson = new Gson();
-		Body body = gson.fromJson(test, Body.class);
+		BodyData body = gson.fromJson(test, BodyData.class);
 		Vector<UVData> DataSet= Reader.getVectorFile();
 		Vector<UVData> toRemove=new Vector<UVData>();
 		if(!body.Cities.isEmpty()) {
