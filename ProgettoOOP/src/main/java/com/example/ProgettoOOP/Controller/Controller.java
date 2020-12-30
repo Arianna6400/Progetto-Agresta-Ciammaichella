@@ -29,7 +29,7 @@ public class Controller {
 
 	
 	@GetMapping("/metadata")
-		public  String getMetedata () {
+		public  String getMetadata () {
 			return DataBase.getMetaData();
 	}
 
@@ -49,7 +49,7 @@ public class Controller {
         return DataBase.getUVData();
     }
 	@PostMapping("/data")
-		public Vector<UVData> test (@RequestBody String test) throws IOException {
+		public Vector<UVData> postData (@RequestBody String test) throws IOException {
 			return BodyParser.getBody(test);
 	}
 

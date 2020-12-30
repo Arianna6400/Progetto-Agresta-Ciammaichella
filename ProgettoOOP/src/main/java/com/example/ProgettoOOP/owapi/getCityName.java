@@ -10,6 +10,7 @@ import com.example.ProgettoOOP.Types.UVData;
 import com.google.gson.Gson;
 
 public class getCityName {
+	static String APIKey= "e28976a0972295b5cf35effb838d0ba9";
 	public double lat;
 	public double lon;
 	public getCityName(double lat,double lon) {
@@ -18,7 +19,7 @@ public class getCityName {
 	}
 	public static String call(double lat,double lon) throws Exception {
 		  StringBuilder urlToRead = new StringBuilder("http://api.openweathermap.org/data/2.5/weather");
-		  urlToRead.append("?lat="+lat+"&lon="+lon+"&appid=e28976a0972295b5cf35effb838d0ba9"); 
+		  urlToRead.append("?lat="+lat+"&lon="+lon+"&appid="+APIKey); 
 		  StringBuilder result = new StringBuilder();
 	      URL url = new URL(urlToRead.toString());
 	      HttpURLConnection conn = (HttpURLConnection) url.openConnection();
