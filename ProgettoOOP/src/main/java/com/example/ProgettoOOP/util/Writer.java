@@ -2,8 +2,6 @@ package com.example.ProgettoOOP.util;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;   
-import java.io.IOException;
-
 import com.example.ProgettoOOP.Types.UVData;
 import com.example.ProgettoOOP.owapi.getUV;
 import com.google.gson.Gson;

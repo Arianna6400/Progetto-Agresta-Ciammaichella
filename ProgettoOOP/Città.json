@@ -23,5 +23,10 @@
 "CityName":"Venice",
 "lat":45.43861,
 "lon":12.32667
+},
+{
+"CityName":"Florence",
+"lat":43.76667,
+"lon":11.25
 }
 ]

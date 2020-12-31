@@ -1,7 +1,6 @@
 package com.example.ProgettoOOP.util;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;

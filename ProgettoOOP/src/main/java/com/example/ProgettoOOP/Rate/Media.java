@@ -1,7 +1,9 @@
 package com.example.ProgettoOOP.Rate;
+import java.io.IOException;
 import java.util.Vector;
 
 import com.example.ProgettoOOP.Types.UVData;
+import com.example.ProgettoOOP.util.Reader;
 public class Media {
 
  
@@ -10,15 +12,18 @@ public class Media {
     public Media(Vector <Double> UVDataSet) {
         this.UVDataSet=UVDataSet;
     }
-    public static double getMedia(Vector<UVData> UVDataSet) {
-        double sum=0, media=0;
-        for(UVData d: UVDataSet) {
-            {
-                sum+=d.value;
+    public static double getMedia(String CityName) throws IOException {
+    	Vector<UVData> DataSet = Reader.getVectorUV();
+    	int counter =0;
+        double sum=0, avg=0;
+        for(UVData d: DataSet) {
+            if(d.name.equals(CityName)) {
+            	sum+=d.value;
+            	counter++;
             }
-            media=sum/(UVDataSet.size());
         }
-        return media;
+        avg=sum/counter;
+        return avg;
     }
     
 }

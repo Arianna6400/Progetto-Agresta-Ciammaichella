@@ -1,9 +1,7 @@
-package com.example.ProgettoOOP.test;
+package com.example.ProgettoOOP.util;
 import java.io.IOException;
-import java.util.List;
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
-import com.example.ProgettoOOP.util.Reader;
 import com.google.gson.Gson;
 
 

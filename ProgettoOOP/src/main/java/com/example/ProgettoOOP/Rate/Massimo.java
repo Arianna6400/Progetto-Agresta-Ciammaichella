@@ -1,7 +1,9 @@
 package com.example.ProgettoOOP.Rate;
+import java.io.IOException;
 import java.util.Vector;
 
 import com.example.ProgettoOOP.Types.UVData;
+import com.example.ProgettoOOP.util.Reader;
 
 public class Massimo {
 
@@ -11,10 +13,11 @@ public class Massimo {
     public Massimo(Vector<Double> UVDataSet) {
             this.UVDataSet = UVDataSet;
     }
-    public static double getMassimo(Vector<UVData> UVDataSet) {
-        double max=UVDataSet.firstElement().value;
-        for(UVData d : UVDataSet) {
-            if(d.value>max) {
+    public static double getMassimo(String CityName) throws IOException {
+    	Vector<UVData> DataSet = Reader.getVectorUV();
+    	double max=0;
+        for(UVData d : DataSet) {
+            if(d.name.equals(CityName) && d.value>max) {
                 max=d.value;
             }
         }
