@@ -33,7 +33,7 @@ public class Controller {
 	@GetMapping("/stats")
 	public String getStats() throws IOException   {
 		//da cambiare da qui
-		Vector<UVData> test = Reader.getVectorFile();	
+		Vector<UVData> test = Reader.getVectorUV();	
 		Calculator.ListParser(test);
 		Result Pes= DataCity.getResult(Calculator.getPescara());
 		Result Anc= DataCity.getResult(Calculator.getAncona());

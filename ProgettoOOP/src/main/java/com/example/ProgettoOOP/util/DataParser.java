@@ -12,7 +12,7 @@ public class DataParser {
 		boolean flag= false;
 		Gson gson = new Gson();
 		BodyData body = gson.fromJson(test, BodyData.class);
-		Vector<UVData> DataSet= Reader.getVectorFile();
+		Vector<UVData> DataSet= Reader.getVectorUV();
 		Vector<UVData> toRemove=new Vector<UVData>();
 		if(!body.Cities.isEmpty()) {
 			for(UVData d : DataSet) {

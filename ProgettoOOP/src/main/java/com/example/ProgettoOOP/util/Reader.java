@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Vector;
 
-import com.example.ProgettoOOP.Types.UVData;
+import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
@@ -18,10 +18,17 @@ import com.google.gson.stream.JsonToken;
 
 
 public class Reader {
-	public static Vector<UVData> getVectorFile() throws IOException{
+	public static Vector<UVData> getVectorUV() throws IOException{
 	BufferedReader reader = Files.newBufferedReader(Paths.get("uv.json"));
 	Vector<UVData> DataList = new Gson().fromJson(reader, new TypeToken<Vector<UVData>>() {}.getType());
 	reader.close();
 	return DataList;
 	}
+	
+	public static Vector<City> getVectorCity() throws IOException{
+		BufferedReader reader = Files.newBufferedReader(Paths.get("Città.json"));
+		Vector<City> DataList = new Gson().fromJson(reader, new TypeToken<Vector<City>>() {}.getType());
+		reader.close();
+		return DataList;
+		}
 }
