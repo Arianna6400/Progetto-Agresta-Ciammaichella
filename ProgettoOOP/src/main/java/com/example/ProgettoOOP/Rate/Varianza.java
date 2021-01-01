@@ -11,11 +11,10 @@ public class Varianza {
 	public Varianza(Vector<Double> UVDataSet) {
 		this.UVDataSet = UVDataSet;
 	}
-	public static double getVarianza(String CityName) throws IOException {
-		Vector<UVData> DataSet = Reader.getVectorUV();
+	public static double getVarianza(String CityName,Vector<UVData> DataSet) throws IOException {
 		int counter = 0;
 		double sum=0;
-		double avg = Media.getMedia(CityName);
+		double avg = Media.getMedia(CityName,DataSet);
 		for(UVData d : DataSet) {
 			if(d.name.equals(CityName)) {
 				d.value-=avg;

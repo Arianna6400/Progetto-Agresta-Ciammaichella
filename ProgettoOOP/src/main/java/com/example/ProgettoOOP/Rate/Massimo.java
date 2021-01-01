@@ -13,8 +13,7 @@ public class Massimo {
     public Massimo(Vector<Double> UVDataSet) {
             this.UVDataSet = UVDataSet;
     }
-    public static double getMassimo(String CityName) throws IOException {
-    	Vector<UVData> DataSet = Reader.getVectorUV();
+    public static double getMassimo(String CityName,Vector<UVData> DataSet) throws IOException {
     	double max=0;
         for(UVData d : DataSet) {
             if(d.name.equals(CityName) && d.value>max) {

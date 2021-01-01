@@ -12,8 +12,7 @@ public class Media {
     public Media(Vector <Double> UVDataSet) {
         this.UVDataSet=UVDataSet;
     }
-    public static double getMedia(String CityName) throws IOException {
-    	Vector<UVData> DataSet = Reader.getVectorUV();
+    public static double getMedia(String CityName,Vector<UVData> DataSet) throws IOException {
     	int counter =0;
         double sum=0, avg=0;
         for(UVData d: DataSet) {

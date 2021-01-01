@@ -20,7 +20,8 @@ public class Controller {
 
 	@GetMapping("/stats")
 	public String getStats() throws IOException   {
-		Vector<String> CitiesNames=Calculator.ListParser();
+		Vector<UVData> DataSet = Reader.getVectorUV();
+		Vector<String> CitiesNames=Calculator.ListParser(DataSet);
 		return DataCity.getResult(CitiesNames); 
 }
 	@GetMapping("/data")
@@ -28,11 +29,11 @@ public class Controller {
         return DataBase.getUVData();
     }
 	@PostMapping("/data")
-		public Vector<UVData> postData (@RequestBody String Filters) throws IOException {
+		public String postData (@RequestBody String Filters) throws IOException {
 			return DataParser.getBody(Filters);
 	}
 	@PostMapping("/stats")
-	public Vector<UVData> postStats (@RequestBody String Filters) throws IOException {
+	public String postStats (@RequestBody String Filters) throws IOException {
 		return StatsParser.getBody(Filters);//provvisorio
 }
 

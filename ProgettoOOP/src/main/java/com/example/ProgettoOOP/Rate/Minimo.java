@@ -11,8 +11,7 @@ public class Minimo {
 	public Minimo(Vector<Double> UVDataSet) {
 		this.UVDataSet = UVDataSet;
 	}
-	public static double getMinimo(String CityName) throws IOException {
-		Vector<UVData> DataSet = Reader.getVectorUV();
+	public static double getMinimo(String CityName,Vector<UVData> DataSet) throws IOException {
 		double min = Double.POSITIVE_INFINITY;
 		for(UVData d : DataSet) {
 			if(d.name.equals(CityName) && d.value<min) {

@@ -7,6 +7,6 @@ public class BodyStats {
 	public Vector<Integer> Range = new Vector<Integer>();
 	public Value Max;
 	public Value Min;
-	public Value Med;
+	public Value Avg;
 	public Value Var;
 }
