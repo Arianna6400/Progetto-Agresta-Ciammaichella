@@ -1,21 +1,20 @@
 package com.example.ProgettoOOP.util;
 
 import java.io.BufferedWriter;
-import java.io.FileWriter;   
-import com.example.ProgettoOOP.Types.UVData;
-import com.example.ProgettoOOP.owapi.getUV;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.util.Vector;
+import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;  
 
 public class Writer {
-  public static void populate(double lat,double lon) throws Exception {
+  public static void populate(Vector<UVData> DataSet) throws Exception {
       BufferedWriter myWriter = new BufferedWriter(new FileWriter("uv.json",true));
-      UVData help = getUV.call(lat, lon);
       Gson gson = new GsonBuilder().setPrettyPrinting().create();
-      String uvJson = gson.toJson(help);
+      String uvJson = gson.toJson(DataSet);
+      new FileOutputStream("uv.json").close(); 
       myWriter.append(uvJson);
-      myWriter.append(",");
-      myWriter.append("\r\n");
       myWriter.close();
   }
 }
