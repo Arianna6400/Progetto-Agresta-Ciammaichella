@@ -2,6 +2,11 @@ package com.example.ProgettoOOP.Types;
 
 import java.util.Vector;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class Value {
 	public double Greater;
 	public double Less;

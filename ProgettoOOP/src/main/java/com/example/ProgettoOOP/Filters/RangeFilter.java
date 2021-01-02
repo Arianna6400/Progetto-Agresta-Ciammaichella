@@ -4,6 +4,11 @@ import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
 import com.example.ProgettoOOP.util.Time;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class RangeFilter {
 	public static Vector<UVData> getRangeFilter (BodyData body,Vector<UVData> DataSet){
 		Vector<UVData> toRemove=new Vector<UVData>();

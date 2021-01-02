@@ -6,6 +6,11 @@ import com.example.ProgettoOOP.Rate.*;
 import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class DataCity {
 	public static String getResult (Vector<String> CitiesName) throws IOException  {
 		Gson gson = new Gson();

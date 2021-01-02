@@ -4,6 +4,11 @@ import java.util.Vector;
 import com.example.ProgettoOOP.Types.BodyStats;
 import com.example.ProgettoOOP.Types.Result;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class MinFilter {
 	public static Vector<Result> getMinFilter (BodyStats body,Vector<Result> StatsSet){
 		Vector<Result> toRemove=new Vector<Result>();

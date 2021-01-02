@@ -9,6 +9,10 @@ import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
 
 public class Reader {
 	public static Vector<UVData> getVectorUV() throws IOException{

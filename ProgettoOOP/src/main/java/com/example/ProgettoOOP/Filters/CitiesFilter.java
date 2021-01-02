@@ -3,6 +3,11 @@ package com.example.ProgettoOOP.Filters;
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class CitiesFilter {
 	public static Vector<UVData> getCityFilter (BodyData body,Vector<UVData> DataSet){
 		boolean flag= false;

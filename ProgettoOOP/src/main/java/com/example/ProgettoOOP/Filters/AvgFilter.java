@@ -3,6 +3,11 @@ package com.example.ProgettoOOP.Filters;
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class AvgFilter {
 	public static Vector<Result> getAvgFilter (BodyStats body,Vector<Result> StatsSet){
 		Vector<Result> toRemove=new Vector<Result>();

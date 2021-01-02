@@ -6,6 +6,11 @@ import com.example.ProgettoOOP.Filters.*;
 import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class DataParser {
 	public static String getBody(String Filters) throws IOException {
 		Gson gson = new Gson();

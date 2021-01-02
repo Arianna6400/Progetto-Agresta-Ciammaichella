@@ -1,5 +1,10 @@
 package com.example.ProgettoOOP.Types;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class UVData {
 	public String name;
 	public String date_iso;

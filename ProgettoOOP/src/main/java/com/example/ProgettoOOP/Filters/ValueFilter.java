@@ -3,6 +3,11 @@ package com.example.ProgettoOOP.Filters;
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class ValueFilter {
 	public static Vector<UVData> getValueFilter (BodyData body,Vector<UVData> DataSet){
 		Vector<UVData> toRemove=new Vector<UVData>();

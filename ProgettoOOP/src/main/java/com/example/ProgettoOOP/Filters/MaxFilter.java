@@ -3,6 +3,10 @@ package com.example.ProgettoOOP.Filters;
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
 
 public class MaxFilter {
 	public static Vector<Result> getMaxFilter (BodyStats body,Vector<Result> StatsSet){

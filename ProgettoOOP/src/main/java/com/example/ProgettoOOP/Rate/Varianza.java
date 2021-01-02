@@ -4,6 +4,11 @@ import java.io.IOException;
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.UVData;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class Varianza {
 
 	public static double getVarianza(String CityName,Vector<UVData> DataSet) throws IOException {

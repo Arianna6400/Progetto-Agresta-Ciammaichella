@@ -4,6 +4,10 @@ import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
 
 public class DataBase {
 		static Vector<MetaData> MetaDataList =new Vector<MetaData>();

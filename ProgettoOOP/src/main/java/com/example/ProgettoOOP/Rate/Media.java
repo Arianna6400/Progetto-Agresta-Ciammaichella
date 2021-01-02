@@ -2,6 +2,12 @@ package com.example.ProgettoOOP.Rate;
 import java.io.IOException;
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.UVData;
+
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class Media {
 
     public static double getMedia(String CityName,Vector<UVData> DataSet) throws IOException {

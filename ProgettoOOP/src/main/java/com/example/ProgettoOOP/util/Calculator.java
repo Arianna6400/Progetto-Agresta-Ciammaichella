@@ -1,6 +1,12 @@
 package com.example.ProgettoOOP.util;
 
 import java.io.IOException;
+
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.UVData;
 public class Calculator {

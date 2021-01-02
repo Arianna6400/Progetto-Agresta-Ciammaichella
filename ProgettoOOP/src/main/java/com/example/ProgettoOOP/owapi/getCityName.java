@@ -8,6 +8,12 @@ import java.net.URL;
 import com.example.ProgettoOOP.Types.UVData;
 import com.google.gson.Gson;
 
+/**Questa classe rappresenta il canale di collegamento
+ * con le API esterne di OpenWeather
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class getCityName {
 	static String APIKey= "e28976a0972295b5cf35effb838d0ba9";
 	public double lat;

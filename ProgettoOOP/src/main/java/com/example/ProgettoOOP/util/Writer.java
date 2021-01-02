@@ -8,6 +8,11 @@ import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;  
 
+/**
+ * @author Arianna Agresta
+ * @author Marco Ciammaichella
+ */
+
 public class Writer {
   public static void populate(Vector<UVData> DataSet) throws Exception {
       BufferedWriter myWriter = new BufferedWriter(new FileWriter("uv.json",true));
