@@ -23958,5 +23958,41 @@
     "name": "Florence",
     "date": 1609588800,
     "value": 0.9
+  },
+  {
+    "name": "Pescara",
+    "date_iso": "2021-01-02T12:00:00Z",
+    "date": 1609588800,
+    "value": 1.03
+  },
+  {
+    "name": "Milan",
+    "date_iso": "2021-01-02T12:00:00Z",
+    "date": 1609588800,
+    "value": 0.81
+  },
+  {
+    "name": "Rome",
+    "date_iso": "2021-01-02T12:00:00Z",
+    "date": 1609588800,
+    "value": 1.05
+  },
+  {
+    "name": "Ancona",
+    "date_iso": "2021-01-02T12:00:00Z",
+    "date": 1609588800,
+    "value": 0.92
+  },
+  {
+    "name": "Venice",
+    "date_iso": "2021-01-02T12:00:00Z",
+    "date": 1609588800,
+    "value": 0.81
+  },
+  {
+    "name": "Florence",
+    "date_iso": "2021-01-02T12:00:00Z",
+    "date": 1609588800,
+    "value": 0.9
   }
 ]

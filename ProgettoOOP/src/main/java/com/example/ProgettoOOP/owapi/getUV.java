@@ -31,8 +31,8 @@ public class getUV {
 	      rd.close();
 	      String JsonResult = result.toString();
 	      Gson gson = new Gson();
-	      UVData wip = gson.fromJson(JsonResult,UVData.class);
-	      wip.name=getCityName.call(lat, lon);
-	      return wip;
+	      UVData Data = gson.fromJson(JsonResult,UVData.class);
+	      Data.name=getCityName.call(lat, lon);
+	      return Data;
 	}
 }

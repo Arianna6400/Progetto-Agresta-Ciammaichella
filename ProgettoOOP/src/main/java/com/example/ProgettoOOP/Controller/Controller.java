@@ -34,7 +34,7 @@ public class Controller {
 	}
 	@PostMapping("/stats")
 	public String postStats (@RequestBody String Filters) throws IOException {
-		return StatsParser.getBody(Filters);//provvisorio
+		return StatsParser.getBody(Filters);
 }
 
 }

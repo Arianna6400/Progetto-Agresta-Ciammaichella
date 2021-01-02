@@ -7,9 +7,9 @@ import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 
 public class DataParser {
-	public static String getBody(String test) throws IOException {
+	public static String getBody(String Filters) throws IOException {
 		Gson gson = new Gson();
-		BodyData body = gson.fromJson(test, BodyData.class);
+		BodyData body = gson.fromJson(Filters, BodyData.class);
 		Vector<UVData> DataSet= Reader.getVectorUV();
 		DataSet=CitiesFilter.getCityFilter(body,DataSet);
 		DataSet=RangeFilter.getRangeFilter(body, DataSet);
