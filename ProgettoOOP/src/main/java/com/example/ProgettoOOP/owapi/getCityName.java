@@ -38,6 +38,9 @@ public class getCityName {
 	      String JsonResult = result.toString();
 	      Gson gson = new Gson();
 	      UVData Data = gson.fromJson(JsonResult,UVData.class);
+	      if(Data.name.isEmpty()) {
+	    	  throw new IllegalArgumentException("Invalid coordinates given");
+	      }
 	      return Data.name;
 	}
 }

@@ -1,6 +1,8 @@
 package com.example.ProgettoOOP.Filters;
 
 import java.util.Vector;
+
+import com.example.ProgettoOOP.Exceptions.FilterException;
 import com.example.ProgettoOOP.Types.*;
 
 /**
@@ -9,7 +11,7 @@ import com.example.ProgettoOOP.Types.*;
  */
 
 public class MaxFilter {
-	public static Vector<Result> getMaxFilter (BodyStats body,Vector<Result> StatsSet){
+	public static Vector<Result> getMaxFilter (BodyStats body,Vector<Result> StatsSet) throws FilterException{
 		Vector<Result> toRemove=new Vector<Result>();
 		if(body.Max != null) {
 			if(body.Max.Greater != 0) {
@@ -27,6 +29,9 @@ public class MaxFilter {
 				}
 			}
 			else if(!body.Max.Included.isEmpty()) {
+				if(body.Max.Included.size()!=2) {
+					throw new FilterException("Illegal number of inputs");
+				}
 				for(Result d: StatsSet) {
 					if(d.Max<body.Max.Included.firstElement() || d.Max>body.Max.Included.lastElement()) {
 						toRemove.add(d);
@@ -34,6 +39,9 @@ public class MaxFilter {
 				}
 			}
 			else if(!body.Max.NotIncluded.isEmpty()) {
+				if(body.Max.NotIncluded.size()!=2) {
+					throw new FilterException("Illegal number of inputs");
+				}
 				for(Result d: StatsSet) {
 					if(d.Max>body.Max.NotIncluded.firstElement() && d.Max<body.Max.NotIncluded.lastElement()) {
 						toRemove.add(d);

@@ -1,6 +1,8 @@
 package com.example.ProgettoOOP.Filters;
 
 import java.util.Vector;
+
+import com.example.ProgettoOOP.Exceptions.*;
 import com.example.ProgettoOOP.Types.*;
 import com.example.ProgettoOOP.util.Time;
 
@@ -10,9 +12,12 @@ import com.example.ProgettoOOP.util.Time;
  */
 
 public class RangeFilter {
-	public static Vector<UVData> getRangeFilter (BodyData body,Vector<UVData> DataSet){
+	public static Vector<UVData> getRangeFilter (BodyData body,Vector<UVData> DataSet) throws FilterException{
 		Vector<UVData> toRemove=new Vector<UVData>();
 		if(!body.Range.isEmpty()) {
+			if(body.Range.size()!= 2 ) {
+				throw new FilterException("Illegal range input");
+			}
 			Vector<Long> Range = Time.getRange(DataSet, body.Range);
 			for(UVData d : DataSet) {
 				if(d.date>Range.firstElement() || d.date<Range.lastElement()) {
@@ -24,8 +29,11 @@ public class RangeFilter {
 		toRemove.clear();
 		return DataSet;
 	}
-	public static Vector<UVData> getRangeFilter (BodyStats body,Vector<UVData> DataSet){
+	public static Vector<UVData> getRangeFilter (BodyStats body,Vector<UVData> DataSet) throws FilterException{
 		Vector<UVData> toRemove=new Vector<UVData>();
+		if(body.Range.size()!= 2) {
+			throw new FilterException("Illegal range input");
+		}
 		if(!body.Range.isEmpty()) {
 			Vector<Long> Range = Time.getRange(DataSet, body.Range);
 			for(UVData d : DataSet) {

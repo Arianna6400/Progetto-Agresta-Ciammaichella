@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.ProgettoOOP.util.*;
+import com.example.ProgettoOOP.Exceptions.FilterException;
 import com.example.ProgettoOOP.Types.*;
 
 /**Rappresenta la classe Controller che gestisce 
@@ -50,20 +51,22 @@ public class Controller {
 	 * @param Filters contiene un JSON che specifica i filtri applicati ai dati dall'utente
 	 * @return Stringa in JSON di UVData
 	 * @throws IOException se vengono generati errori di Input/Output di lettura del file
+	 * @throws FilterException 
 	 */
 	
 	@PostMapping("/data")
-		public String postData (@RequestBody String Filters) throws IOException {
+		public String postData (@RequestBody String Filters) throws IOException, FilterException {
 			return DataParser.getBody(Filters);
 	}
 	/**Risponde alla chiamata POST/stats
 	 * @param Filters contiene un JSON che specifica i filtri applicati alle statistiche dall'utente 
 	 * @return Stringa in JSON di Result
 	 * @throws IOException se vengono generati errori di Input/Output di lettura del file
+	 * @throws FilterException 
 	 */
 	
 	@PostMapping("/stats")
-	public String postStats (@RequestBody String Filters) throws IOException {
+	public String postStats (@RequestBody String Filters) throws IOException, FilterException {
 		return StatsParser.getBody(Filters);
     }
 
