@@ -16,6 +16,8 @@ public class DataBase {
 			MetaDataList.add(new MetaData ("CityName","Nome della città","String"));
 			MetaDataList.add(new MetaData ("Lon","Longitudine della città","String"));
 			MetaDataList.add(new MetaData ("Lat","Latitudine della città","String"));
+			MetaDataList.add(new MetaData ("Date_iso","Data in formato aaaa/mm/gg","String"));
+			MetaDataList.add(new MetaData ("Date","Data in formato unix","Long"));
 			MetaDataList.add(new MetaData ("Max","Picco massimo di raggi uv ","Double"));
 			MetaDataList.add(new MetaData ("Min","Picco minimo di raggi uv","Double"));
 			MetaDataList.add(new MetaData ("Avg","Media dei raggi uv","Double"));

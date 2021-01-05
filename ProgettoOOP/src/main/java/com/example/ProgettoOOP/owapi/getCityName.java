@@ -19,8 +19,6 @@ public class getCityName extends OWClass {
 	public getCityName(double lat, double lon) {
 		super(lat, lon);
 	}
-
-	static String APIKey= "e28976a0972295b5cf35effb838d0ba9";
 	
 	public static String call(double lat,double lon) throws Exception {
 		  StringBuilder urlToRead = new StringBuilder("http://api.openweathermap.org/data/2.5/weather");
@@ -38,9 +36,6 @@ public class getCityName extends OWClass {
 	      String JsonResult = result.toString();
 	      Gson gson = new Gson();
 	      UVData Data = gson.fromJson(JsonResult,UVData.class);
-	      if(Data.name.isEmpty()) {
-	    	  throw new IllegalArgumentException("Invalid coordinates given");
-	      }
 	      return Data.name;
 	}
 }

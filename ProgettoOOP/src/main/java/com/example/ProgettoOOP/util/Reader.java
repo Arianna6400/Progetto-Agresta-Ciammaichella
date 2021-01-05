@@ -26,7 +26,7 @@ public class Reader {
 		}
 		catch(NoSuchFileException e) {
 			 e.printStackTrace();
-			 throw new MissingFileException("json file not found in the folder");
+			 throw new MissingFileException("Json file not found in the folder");
 		}
 			return DataList;
 	}
@@ -40,7 +40,7 @@ public class Reader {
 		}
 		catch(NoSuchFileException e) {
 			 e.printStackTrace();
-			 throw new MissingFileException("json file not found in the folder");
+			 throw new MissingFileException("Json file not found in the folder");
 		}
 			return DataList;
 	}

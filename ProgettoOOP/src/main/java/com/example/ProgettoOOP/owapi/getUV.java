@@ -19,8 +19,6 @@ public class getUV extends OWClass {
 	public getUV(double lat, double lon) {
 		super(lat, lon);
 	}
-
-	static String APIKey = "e28976a0972295b5cf35effb838d0ba9";
 	
 	public static UVData call(double lat,double lon) throws Exception {
 		  StringBuilder urlToRead = new StringBuilder("http://api.openweathermap.org/data/2.5/uvi");

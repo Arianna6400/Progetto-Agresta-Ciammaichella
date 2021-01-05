@@ -13,6 +13,12 @@ public class DataSet_Populator {
 	public static void sleep() throws Exception {
 	
 		Vector<City> CityData = Reader.getVectorCity(); 
+		for(City c: CityData) {
+			if(c.lat<-90.0||c.lat>90.0) 
+				  throw new IllegalArgumentException("Invalid latitude given in" + c.CityName);
+		    if(c.lon<-180.0||c.lon>180.0) 
+		    	  throw new IllegalArgumentException("Invalid longitude given in" + c.CityName);
+		}
 		Vector<UVData> DataSet = Reader.getVectorUV();
 		while(true) {
 			for(int i=0;i<CityData.size();i++) {

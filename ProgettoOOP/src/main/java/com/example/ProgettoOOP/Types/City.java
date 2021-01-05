@@ -11,4 +11,10 @@ public class City {
 	public double lat;
 	public double lon;
 	
+	public City(String CityName, double lat, double lon) {
+		this.CityName=CityName;
+		this.lat=lat;
+		this.lon=lon;
+	}
+	
 }
