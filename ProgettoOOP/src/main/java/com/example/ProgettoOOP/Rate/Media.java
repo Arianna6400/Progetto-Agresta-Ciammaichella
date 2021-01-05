@@ -8,9 +8,13 @@ import com.example.ProgettoOOP.Types.UVData;
  * @author Marco Ciammaichella
  */
 
-public class Media {
+public class Media extends RateClass {
 
-    public static double getMedia(String CityName,Vector<UVData> DataSet) throws IOException {
+    public Media(String CityName, Vector<UVData> DataSet) {
+		super(CityName, DataSet);
+	}
+
+	public static double getMedia(String CityName,Vector<UVData> DataSet) throws IOException {
     	int counter =0;
         double sum=0, avg=0;
         for(UVData d: DataSet) {

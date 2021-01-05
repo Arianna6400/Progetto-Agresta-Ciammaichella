@@ -14,14 +14,14 @@ import com.google.gson.Gson;
  * @author Marco Ciammaichella
  */
 
-public class getCityName {
-	static String APIKey= "e28976a0972295b5cf35effb838d0ba9";
-	public double lat;
-	public double lon;
-	public getCityName(double lat,double lon) {
-		this.lat=lat;
-		this.lon=lon;
+public class getCityName extends OWClass {
+	
+	public getCityName(double lat, double lon) {
+		super(lat, lon);
 	}
+
+	static String APIKey= "e28976a0972295b5cf35effb838d0ba9";
+	
 	public static String call(double lat,double lon) throws Exception {
 		  StringBuilder urlToRead = new StringBuilder("http://api.openweathermap.org/data/2.5/weather");
 		  urlToRead.append("?lat="+lat+"&lon="+lon+"&appid="+APIKey); 

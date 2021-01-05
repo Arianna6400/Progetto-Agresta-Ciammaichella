@@ -9,7 +9,11 @@ import com.example.ProgettoOOP.Types.UVData;
  * @author Marco Ciammaichella
  */
 
-public class Varianza {
+public class Varianza extends RateClass {
+
+	public Varianza(String CityName, Vector<UVData> DataSet) {
+		super(CityName, DataSet);
+	}
 
 	public static double getVarianza(String CityName,Vector<UVData> DataSet) throws IOException {
 		int counter = 0;

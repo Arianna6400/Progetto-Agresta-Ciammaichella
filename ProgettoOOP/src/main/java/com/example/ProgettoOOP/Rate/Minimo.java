@@ -9,7 +9,11 @@ import com.example.ProgettoOOP.Types.UVData;
  * @author Marco Ciammaichella
  */
 
-public class Minimo {
+public class Minimo extends RateClass {
+
+	public Minimo(String CityName, Vector<UVData> DataSet) {
+		super(CityName, DataSet);
+	}
 
 	public static double getMinimo(String CityName,Vector<UVData> DataSet) throws IOException {
 		double min = Double.POSITIVE_INFINITY;

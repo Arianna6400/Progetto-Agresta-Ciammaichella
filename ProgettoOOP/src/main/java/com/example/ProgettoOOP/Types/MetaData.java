@@ -1,6 +1,8 @@
 package com.example.ProgettoOOP.Types;
 
-/**
+/**Classe che definisce il costruttore MetaData e definisce
+ * i metodi get e set per le variabili, definendo anche 
+ * l'Override del metodo toString().
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
