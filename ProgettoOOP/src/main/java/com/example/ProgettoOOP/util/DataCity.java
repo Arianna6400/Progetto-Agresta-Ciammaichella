@@ -12,19 +12,22 @@ import com.google.gson.Gson;
  */
 
 public class DataCity {
-	public static String getResult (Vector<String> CitiesName) throws IOException  {
+	public static String getResult (Vector<String> CitiesName) {
 		Gson gson = new Gson();
 		Vector<Result> Stats = new Vector<Result>();
-		Vector<UVData> DataSet = Reader.getVectorUV();
-		for(String s : CitiesName) { 
-			Result result = new Result();
-			result.Max=Massimo.getMassimo(s,DataSet);
-			result.Min=Minimo.getMinimo(s,DataSet);
-			result.Avg=Media.getMedia(s,DataSet);
-			result.Var=Varianza.getVarianza(s,DataSet);
-			result.CityName=s;
-			Stats.add(result);
-		}
+		Vector<UVData> DataSet;
+		try {
+		      DataSet = Reader.getVectorUV();
+		      for(String s : CitiesName) { 
+			           Result result = new Result();
+			           result.Max=Massimo.getMassimo(s,DataSet);
+			           result.Min=Minimo.getMinimo(s,DataSet);
+			           result.Avg=Media.getMedia(s,DataSet);
+			           result.Var=Varianza.getVarianza(s,DataSet);
+			           result.CityName=s;
+			           Stats.add(result);
+		     }
+		} catch (IOException e) { e.printStackTrace();}
 		String strJson = gson.toJson(Stats);
 		return strJson ;
 	}

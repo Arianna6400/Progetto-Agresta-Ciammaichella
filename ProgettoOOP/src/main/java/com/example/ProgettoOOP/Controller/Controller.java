@@ -51,7 +51,7 @@ public class Controller {
 	 * @param Filters contiene un JSON che specifica i filtri applicati ai dati dall'utente
 	 * @return Stringa in JSON di UVData
 	 * @throws IOException se vengono generati errori di Input/Output di lettura del file
-	 * @throws FilterException 
+	 * @throws FilterException se vengono generati errori nel POST riguardanti il filtraggio
 	 */
 	
 	@RequestMapping(value = "data", method=RequestMethod.POST)
@@ -62,7 +62,7 @@ public class Controller {
 	 * @param Filters contiene un JSON che specifica i filtri applicati alle statistiche dall'utente 
 	 * @return Stringa in JSON di Result
 	 * @throws IOException se vengono generati errori di Input/Output di lettura del file
-	 * @throws FilterException 
+	 * @throws FilterException se vengono generati errori nel POST riguardanti il filtraggio
 	 */
 	
 	@RequestMapping(value = "stats", method=RequestMethod.POST)

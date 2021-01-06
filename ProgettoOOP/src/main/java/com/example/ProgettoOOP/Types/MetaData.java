@@ -8,9 +8,9 @@ package com.example.ProgettoOOP.Types;
  */
 
 public class MetaData {
-	String Alias;
-	String sourceField;
-	String Type;
+	protected String Alias;
+	protected String sourceField;
+	protected String Type;
 	
 	public MetaData(String Alias,String sourceField,String Type) {
 		this.Alias=Alias;

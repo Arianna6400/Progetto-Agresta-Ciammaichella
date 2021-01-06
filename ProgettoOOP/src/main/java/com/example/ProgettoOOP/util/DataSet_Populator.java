@@ -2,7 +2,7 @@ package com.example.ProgettoOOP.util;
 
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
-import com.example.ProgettoOOP.owapi.getUV;
+import com.example.ProgettoOOP.owapi.*;
 
 /**
  * @author Arianna Agresta

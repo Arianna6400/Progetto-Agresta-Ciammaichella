@@ -4,16 +4,8 @@ import java.io.IOException;
 import java.util.Vector;
 
 import com.example.ProgettoOOP.Exceptions.FilterException;
-import com.example.ProgettoOOP.Filters.AvgFilter;
-import com.example.ProgettoOOP.Filters.CitiesFilter;
-import com.example.ProgettoOOP.Filters.MaxFilter;
-import com.example.ProgettoOOP.Filters.MinFilter;
-import com.example.ProgettoOOP.Filters.RangeFilter;
-import com.example.ProgettoOOP.Filters.VarFilter;
-import com.example.ProgettoOOP.Rate.Massimo;
-import com.example.ProgettoOOP.Rate.Media;
-import com.example.ProgettoOOP.Rate.Minimo;
-import com.example.ProgettoOOP.Rate.Varianza;
+import com.example.ProgettoOOP.Filters.*;
+import com.example.ProgettoOOP.Rate.*;
 import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 
