@@ -9,13 +9,13 @@ import java.util.Vector;
 
 public class BodyStats {
 	public Vector<String> Cities= new Vector<String>();
-	public Vector<Integer> Range = new Vector<Integer>();
+	public int Range;
 	public FilterField Max;
 	public FilterField Min;
 	public FilterField Avg;
 	public FilterField Var;
 	
-	public BodyStats(Vector<String> Cities, Vector<Integer> Range, FilterField Max, FilterField Min, FilterField Avg, FilterField Var) {
+	public BodyStats(Vector<String> Cities, int Range, FilterField Max, FilterField Min, FilterField Avg, FilterField Var) {
 		
 		this.Cities=Cities;
 		this.Range=Range;

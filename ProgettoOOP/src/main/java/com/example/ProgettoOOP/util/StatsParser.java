@@ -1,6 +1,7 @@
 package com.example.ProgettoOOP.util;
 
 import java.io.IOException;
+import java.util.NoSuchElementException;
 import java.util.Vector;
 
 import com.example.ProgettoOOP.Exceptions.FilterException;
@@ -47,27 +48,42 @@ public class StatsParser {
 			Filters=Filters.replace("notincluded", "NotIncluded");
 		}
 		Gson gson = new Gson();
+		boolean flag = false;
+		Vector<Result> Stats = new Vector<Result>();
 		BodyStats body = gson.fromJson(Filters, BodyStats.class);
 		Vector<UVData> DataSet= Reader.getVectorUV();
 		DataSet=CitiesFilter.getCityFilter(body,DataSet);
-		DataSet=RangeFilter.getRangeFilter(body, DataSet); 
 		Vector<String> CitiesNames=Calculator.ListParser(DataSet);
-		Vector<Result> Stats = new Vector<Result>();
-		for(String s : CitiesNames) { 
-			Result result = new Result();
-			result.Max=Massimo.getMassimo(s,DataSet);
-			result.Min=Minimo.getMinimo(s,DataSet);
-			result.Avg=Media.getMedia(s,DataSet);
-			result.Var=Varianza.getVarianza(s,DataSet);
-			result.CityName=s;
-			Stats.add(result);
-		}
-		Stats=MaxFilter.getMaxFilter(body, Stats);
-		Stats=MinFilter.getMinFilter(body, Stats);
-		Stats=AvgFilter.getAvgFilter(body, Stats);
-		Stats=VarFilter.getVarFilter(body, Stats);
-		String StatsJson = gson.toJson(Stats);
-		return StatsJson;
+		int start = 0;
+		int stop= body.Range-1;
+		while(!flag) {
+			Vector<UVData> DataSetBackup = new Vector<UVData>(DataSet);
+			DataSetBackup=RangeFilter.getRangeFilter(body,start,stop,DataSet);
+			if(DataSetBackup.isEmpty()) {
+				flag=true;
+				break;
+			}
+				for(String s : CitiesNames) { 
+					Result result = new Result();
+					result.Max=Massimo.getMassimo(s,DataSetBackup);
+					result.Min=Minimo.getMinimo(s,DataSetBackup);
+					result.Avg=Media.getMedia(s,DataSetBackup);
+					result.Var=Varianza.getVarianza(s,DataSetBackup);
+					result.CityName=s;
+					Stats.add(result);
+				}
+				start+=body.Range;
+				stop+=body.Range;
+				DataSetBackup.clear();
+			}
+		
+			Stats=MaxFilter.getMaxFilter(body, Stats);
+			Stats=MinFilter.getMinFilter(body, Stats);
+			Stats=AvgFilter.getAvgFilter(body, Stats);
+			Stats=VarFilter.getVarFilter(body, Stats);
+			String StatsJson = gson.toJson(Stats);
+			return StatsJson;
+		
 	}
 	
 }

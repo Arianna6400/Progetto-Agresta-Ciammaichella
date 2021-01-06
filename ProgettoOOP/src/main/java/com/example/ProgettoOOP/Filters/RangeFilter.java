@@ -29,21 +29,20 @@ public class RangeFilter {
 		toRemove.clear();
 		return DataSet;
 	}
-	public static Vector<UVData> getRangeFilter (BodyStats body,Vector<UVData> DataSet) throws FilterException{
+	public static Vector<UVData> getRangeFilter (BodyStats body,int inizio,int fine,Vector<UVData> DataSet) throws FilterException{
 		Vector<UVData> toRemove=new Vector<UVData>();
-		if(body.Range.size()!= 2) {
-			throw new FilterException("Illegal range input");
-		}
-		if(!body.Range.isEmpty()) {
-			Vector<Long> Range = Time.getRange(DataSet, body.Range);
-			for(UVData d : DataSet) {
+		Vector<UVData> DataSetHelp=new Vector<UVData>(DataSet);
+		if(body.Range!=0) {
+			Vector<Long> Range = Time.getStatsRange(DataSetHelp,inizio,fine);
+			for(UVData d : DataSetHelp) {
 				if(d.date>Range.firstElement() || d.date<Range.lastElement()) {
-					toRemove.add(d);
+					toRemove.add(d); 
 				}
 			}
 		}
-		DataSet.removeAll(toRemove);
+		DataSetHelp.removeAll(toRemove);
 		toRemove.clear();
-		return DataSet;
+		return DataSetHelp;
 	}
 }
+
