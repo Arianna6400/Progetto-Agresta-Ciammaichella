@@ -20,7 +20,7 @@ public class Reader {
 	public static Vector<UVData> getVectorUV() throws IOException{
 		Vector<UVData> DataList;
 		try {
-			BufferedReader reader = Files.newBufferedReader(Paths.get("uv.json"));
+			BufferedReader reader = Files.newBufferedReader(Paths.get("CityUVFile/Uv.json"));
 			DataList = new Gson().fromJson(reader, new TypeToken<Vector<UVData>>() {}.getType());
 			reader.close();
 		}
@@ -34,7 +34,7 @@ public class Reader {
 	public static Vector<City> getVectorCity() throws IOException{
 		Vector<City> DataList;
 		try {
-			BufferedReader reader = Files.newBufferedReader(Paths.get("Città.json"));
+			BufferedReader reader = Files.newBufferedReader(Paths.get("CityUVFile/Città.json"));
 			DataList = new Gson().fromJson(reader, new TypeToken<Vector<City>>() {}.getType());
 			reader.close();
 		}

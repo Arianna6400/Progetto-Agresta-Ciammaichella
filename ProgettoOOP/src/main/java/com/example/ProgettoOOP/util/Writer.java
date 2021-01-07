@@ -15,10 +15,10 @@ import com.google.gson.GsonBuilder;
 
 public class Writer {
   public static void populate(Vector<UVData> DataSet) throws Exception {
-      BufferedWriter myWriter = new BufferedWriter(new FileWriter("uv.json",true));
+      BufferedWriter myWriter = new BufferedWriter(new FileWriter("CityUVFile/Uv.json",true));
       Gson gson = new GsonBuilder().setPrettyPrinting().create();
       String uvJson = gson.toJson(DataSet);
-      new FileOutputStream("uv.json").close(); 
+      new FileOutputStream("CityUVFile/Uv.json").close(); 
       myWriter.append(uvJson);
       myWriter.close();
   }

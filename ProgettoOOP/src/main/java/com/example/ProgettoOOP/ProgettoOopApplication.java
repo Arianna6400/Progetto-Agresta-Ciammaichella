@@ -15,7 +15,7 @@ public class ProgettoOopApplication {
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(ProgettoOopApplication.class, args);
-		//DataSet_Populator.sleep(); 
+		DataSet_Populator.sleep(); 
 	}
 
 }

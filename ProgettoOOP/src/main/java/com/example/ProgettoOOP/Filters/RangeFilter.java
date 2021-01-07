@@ -29,7 +29,7 @@ public class RangeFilter {
 		toRemove.clear();
 		return DataSet;
 	}
-	public static Vector<UVData> getRangeFilter (BodyStats body,int inizio,int fine,Vector<UVData> DataSet) throws FilterException{
+	public static Vector<UVData> getRangeFilter (BodyStats body,int inizio,int fine,Vector<UVData> DataSet) {
 		Vector<UVData> toRemove=new Vector<UVData>();
 		Vector<UVData> DataSetHelp=new Vector<UVData>(DataSet);
 		if(body.Range!=0) {

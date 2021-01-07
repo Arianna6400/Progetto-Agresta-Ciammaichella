@@ -10,8 +10,8 @@ import com.google.gson.Gson;
  */
 
 public class DataBase {
-		static Vector<MetaData> MetaDataList =new Vector<MetaData>();
-		static Gson gson = new Gson();
+		private static Vector<MetaData> MetaDataList =new Vector<MetaData>();
+		private static Gson gson = new Gson();
 		public static  String  getMetaData(){
 			MetaDataList.add(new MetaData ("CityName","Nome della città","String"));
 			MetaDataList.add(new MetaData ("Lon","Longitudine della città","String"));
