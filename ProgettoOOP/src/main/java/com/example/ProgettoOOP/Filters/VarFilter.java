@@ -5,12 +5,21 @@ import java.util.Vector;
 import com.example.ProgettoOOP.Exceptions.FilterException;
 import com.example.ProgettoOOP.Types.*;
 
-/**
+/**Classe di visibilità public che contiene il metodo
+ * getVarFilter per il filtraggio della varianza
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
 
 public class VarFilter {
+	
+	/**Metodo public per il filtro Varianza che popola un Vector di
+	 * elementi da rimuovere dal filtraggio
+	 * @param body Parametro di tipo BodyStats
+	 * @param StatsSet Un Vector di tipo Result
+	 * @return Un Vector di Result con filtraggio applicato
+	 * @throws FilterException In caso di errori in input da parte dell'utente
+	 */	
 	public static Vector<Result> getVarFilter (BodyStats body,Vector<Result> StatsSet) throws FilterException{
 		Vector<Result> toRemove=new Vector<Result>();
 		if(body.Var != null) {

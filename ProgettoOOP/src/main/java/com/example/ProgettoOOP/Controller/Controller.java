@@ -29,7 +29,7 @@ public class Controller {
 	
 	/**Risponde alla chiamata GET /data
 	 * @return Stringa in JSON di UVData
-	 * @throws IOException se vengono generati errori di Input/Output di lettura del file
+	 * @throws IOException Se vengono generati errori di Input/Output di lettura del file
 	 */
 
 	@RequestMapping(value = "data", method=RequestMethod.GET)
@@ -38,7 +38,7 @@ public class Controller {
     }
 	/**Risponde alla chiamata GET/stats
 	 * @return Stringa in JSON di Result
-	 * @throws IOException se vengono generati errori di Input/Output di lettura del file
+	 * @throws IOException Se vengono generati errori di Input/Output di lettura del file
 	 */
 	
 	@RequestMapping(value = "stats", method=RequestMethod.GET)
@@ -50,8 +50,8 @@ public class Controller {
 	/**Risponde alla chiamata POST/data
 	 * @param Filters contiene un JSON che specifica i filtri applicati ai dati dall'utente
 	 * @return Stringa in JSON di UVData
-	 * @throws IOException se vengono generati errori di Input/Output di lettura del file
-	 * @throws FilterException se vengono generati errori nel POST riguardanti il filtraggio
+	 * @throws IOException Se vengono generati errori di Input/Output di lettura del file
+	 * @throws FilterException Se vengono generati errori nel POST riguardanti il filtraggio
 	 */
 	
 	@RequestMapping(value = "data", method=RequestMethod.POST)
@@ -61,8 +61,8 @@ public class Controller {
 	/**Risponde alla chiamata POST/stats
 	 * @param Filters contiene un JSON che specifica i filtri applicati alle statistiche dall'utente 
 	 * @return Stringa in JSON di Result
-	 * @throws IOException se vengono generati errori di Input/Output di lettura del file
-	 * @throws FilterException se vengono generati errori nel POST riguardanti il filtraggio
+	 * @throws IOException Se vengono generati errori di Input/Output di lettura del file
+	 * @throws FilterException Se vengono generati errori nel POST riguardanti il filtraggio
 	 */
 	
 	@RequestMapping(value = "stats", method=RequestMethod.POST)

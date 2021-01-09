@@ -5,14 +5,24 @@ import java.util.Vector;
 import com.example.ProgettoOOP.Exceptions.*;
 import com.example.ProgettoOOP.Types.*;
 
-/**
+/**Classe di visibilità public che contiene il metodo
+ * getValueFilter per il filtraggio del valore dei raggi UV
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
 
 public class ValueFilter {
+	
+	/**Metodo public per il filtro del Valore UV che popola un 
+	 * Vector di elementi da rimuovere dal filtraggio
+	 * @param body Parametro di tipo BodyData
+	 * @param DataSet Un Vector di tipo UVData
+	 * @return Un Vector di UVData con filtraggio applicato
+	 * @throws FilterException In caso di errori in input da parte dell'utente
+	 */
+	
 	public static Vector<UVData> getValueFilter (BodyData body,Vector<UVData> DataSet) throws FilterException{
-		Vector<UVData> toRemove=new Vector<UVData>();
+		Vector<UVData> toRemove=new Vector<UVData>(); //Vettore da popolare e poi da rimuovere
 		if(body.Value != null) {
 			if(body.Value.Greater != 0) {
 				for(UVData d: DataSet) {
@@ -49,8 +59,8 @@ public class ValueFilter {
 				}
 			}
 		}
-		DataSet.removeAll(toRemove);
-		toRemove.clear();
+		DataSet.removeAll(toRemove); //Popola il Vector di Result StatsSet filtrato
+		toRemove.clear(); //Pulisce il primo Vector popolato
 		return DataSet;
 	}
 }

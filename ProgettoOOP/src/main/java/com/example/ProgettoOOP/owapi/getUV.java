@@ -8,7 +8,7 @@ import java.net.URL;
 import com.example.ProgettoOOP.Types.UVData;
 import com.google.gson.Gson;
 
-/**Questa classe rappresenta il canale di collegamento
+/**Questa sottoclasse rappresenta il canale di collegamento
  * con le API esterne di OpenWeather
  * @author Arianna Agresta
  * @author Marco Ciammaichella
@@ -20,6 +20,14 @@ public class getUV extends OWClass {
 		super(lat, lon);
 	}
 	
+	/**Metodo che chiama i valori dei raggi UV dalle API di
+	 * OpenWeather tramite latitudine e longitudine, 
+	 * chiamando getCityName
+	 * @param lat
+	 * @param lon
+	 * @return Un tipo UVData da convertire in JSON
+	 * @throws Exception
+	 */
 	public static UVData call(double lat,double lon) throws Exception {
 		  StringBuilder urlToRead = new StringBuilder("http://api.openweathermap.org/data/2.5/uvi");
 		  urlToRead.append("?lat="+lat+"&lon="+lon+"&appid="+APIKey); 
