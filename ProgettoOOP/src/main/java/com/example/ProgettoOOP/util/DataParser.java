@@ -8,13 +8,23 @@ import com.example.ProgettoOOP.Filters.*;
 import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 
-/**
+/**Classe che modifica il dataset in base ai filtri inseriti
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
 
 public class DataParser {
+	
+	/**Funzione che elimina dal dataset totale ogni ogetto json che non 
+	 * rispetta i filtri inseriti dall'utente
+	 * @param Filters stringa contenente i filtri da applicare al dataset
+	 * @return stringa in json contenente il dataset filrato
+	 * @throws IOException se si verifica un problema di Input/Output 
+	 * @throws FilterException se si verifica un problema con i filtri inseriti 
+	 */
+	
 	public static String getBody(String Filters) throws IOException, FilterException {
+		//if a cascata che rendono "non-case sensitive" l'inserimento dei filtri
 		if(Filters.contains("cities")) {
 			Filters=Filters.replace("cities", "Cities");
 		}

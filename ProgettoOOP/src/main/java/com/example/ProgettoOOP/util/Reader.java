@@ -11,26 +11,33 @@ import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-/**
+/**Classe che legge da file .json e inserisce i dati in una struttura
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
 
 public class Reader {
+	/**Funzione che legge dal file "uv.json" e inserisce i dati in un vector di UVData
+	 * @return un vector di UVData contenente i valori all'interno del dataset
+	 * @throws IOException se si verifica un problema di Input/Output
+	 */
 	public static Vector<UVData> getVectorUV() throws IOException{
-		Vector<UVData> DataList;
+		Vector<UVData> DataSet;
 		try {
 			BufferedReader reader = Files.newBufferedReader(Paths.get("CityUVFile/Uv.json"));
-			DataList = new Gson().fromJson(reader, new TypeToken<Vector<UVData>>() {}.getType());
+			DataSet = new Gson().fromJson(reader, new TypeToken<Vector<UVData>>() {}.getType());
 			reader.close();
 		}
 		catch(NoSuchFileException e) {
 			 e.printStackTrace();
 			 throw new MissingFileException("Json file not found in the folder");
 		}
-			return DataList;
+			return DataSet;
 	}
-	
+	/**Funzione che legge dal file "Città.json" e inserisce i dati in un vector di City
+	 * @return un vector di City contenente i dati riguardanti le città inseriti dall'utente
+	 * @throws IOException se si verifica un problema di Input/Output
+	 */
 	public static Vector<City> getVectorCity() throws IOException{
 		Vector<City> DataList;
 		try {

@@ -6,12 +6,19 @@ import com.example.ProgettoOOP.Rate.*;
 import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 
-/**
+/**Classe che gestisce la chiamata /stats di tipo GET
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
 
 public class DataCity {
+	
+	/**Funzione che calcola le statistiche per ogni città 
+	 * all'interno dell'intero dataset
+	 * @param CitiesName vector di stringhe contenente tutte le città presenti nel dataset
+	 * @return una stringa in json contenente un vector di result popolato da ogni città con le rispettive statistiche
+	 */
+	
 	public static String getResult (Vector<String> CitiesName) {
 		Gson gson = new Gson();
 		Vector<Result> Stats = new Vector<Result>();
@@ -27,7 +34,9 @@ public class DataCity {
 			           result.CityName=s;
 			           Stats.add(result);
 		     }
-		} catch (IOException e) { e.printStackTrace();}
+		} catch (IOException e) { 
+			e.printStackTrace();
+			}
 		String strJson = gson.toJson(Stats);
 		return strJson ;
 	}

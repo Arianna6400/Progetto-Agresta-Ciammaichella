@@ -30,7 +30,7 @@ public class RangeFilter {
 			if(body.Range.size()!= 2 ) {
 				throw new FilterException("Illegal range input");
 			}
-			Vector<Long> Range = Time.getRange(DataSet, body.Range);
+			Vector<Long> Range = Time.getRange(DataSet, body.Range.get(0) , body.Range.get(1));
 			for(UVData d : DataSet) {
 				if(d.date>Range.firstElement() || d.date<Range.lastElement()) {
 					toRemove.add(d);
@@ -56,7 +56,7 @@ public class RangeFilter {
 		Vector<UVData> toRemove=new Vector<UVData>(); //Vettore da popolare e poi da rimuovere
 		Vector<UVData> DataSetHelp=new Vector<UVData>(DataSet); //Vettore di copia d'appoggio
 		if(body.Range!=0) {
-			Vector<Long> Range = Time.getStatsRange(DataSetHelp,inizio,fine);
+			Vector<Long> Range = Time.getRange(DataSetHelp,inizio,fine);
 			for(UVData d : DataSetHelp) {
 				if(d.date>Range.firstElement() || d.date<Range.lastElement()) {
 					toRemove.add(d); 

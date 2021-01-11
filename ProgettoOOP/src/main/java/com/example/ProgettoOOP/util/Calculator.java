@@ -1,16 +1,22 @@
 package com.example.ProgettoOOP.util;
 
-import java.io.IOException;
+import java.util.Vector;
+import com.example.ProgettoOOP.Types.UVData;
 
-/**
+/**Classeche immagazina in un vector
+ * ogni città trovata all'interno del dataset
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
-
-import java.util.Vector;
-import com.example.ProgettoOOP.Types.UVData;
 public class Calculator {
-	public static Vector<String> ListParser(Vector<UVData> DataSet) throws IOException {
+	
+	/**Funzione che scorre l'intero dataset e immagazina ogni 
+	 * nuovo "name" trovato in un vector
+	 * @param DataSet il dataset (totale o filtrato) su cui la funzione lavora
+	 * @return Un vector di stringhe contenente ogni nome di città trovato nel dataset (in singola copia)
+	 */
+	
+	public static Vector<String> ListParser(Vector<UVData> DataSet)  {
 		boolean flag= false;
 		Vector<String> CityNames = new Vector<String>();
 		CityNames.add(DataSet.firstElement().name);

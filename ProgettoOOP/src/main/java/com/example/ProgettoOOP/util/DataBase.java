@@ -4,7 +4,7 @@ import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
 import com.google.gson.Gson;
 
-/**
+/**Classe che gestisce le chiamate GET di /data e /metadata
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
@@ -12,6 +12,11 @@ import com.google.gson.Gson;
 public class DataBase {
 		private static Vector<MetaData> MetaDataList =new Vector<MetaData>();
 		private static Gson gson = new Gson();
+		
+		/**Funzione che popola il vector di MetaData e lo trasforma in stringa json 
+		 * @return una stringa json contenente il vector di MetaData popolato
+		 */
+		
 		public static  String  getMetaData(){
 			MetaDataList.add(new MetaData ("CityName","Nome della città","String"));
 			MetaDataList.add(new MetaData ("Lon","Longitudine della città","String"));
@@ -25,7 +30,12 @@ public class DataBase {
 			String strJson = gson.toJson(MetaDataList);
 			return strJson ;
 		}
-	
+		
+		/**Funzione che legge dal file "uv.json" e trasforma i dati in json
+		 * @return stringa in json contenente l'intero dataset letto da "uv.json"
+		 * @throws IOException se si verifica un problema di Input/Output nella funzione "Reader.getVectorUV()"
+		 */
+		
 		public static String  getUVData() throws IOException {
 		       
 	        Vector<UVData> DataList = Reader.getVectorUV();

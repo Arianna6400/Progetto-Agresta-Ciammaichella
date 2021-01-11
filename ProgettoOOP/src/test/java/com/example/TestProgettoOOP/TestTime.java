@@ -31,11 +31,7 @@ class TestTime {
 	}
 
 	@Test
-	void test1() {
-		assertEquals(FilteredRange,t1.getRange(FilteredVector, Range));
-	}
-	@Test
-	void test2() {
-		assertEquals(FilteredRange,t1.getStatsRange(FilteredVector, 0 , 1));
+	void test() {
+		assertEquals(FilteredRange,t1.getRange(FilteredVector, 0 , 1));
 	}
 }
