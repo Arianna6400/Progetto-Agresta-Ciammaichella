@@ -25,7 +25,7 @@ public class StatsParser {
 	 * @throws FilterException se si verifica un errore di input dei filtri da parte dell'utente
 	 */
 	public static String getBody(String Filters) throws IOException, FilterException {
-		//if a cascata che rendono "non-case sensiitive" l'inserimento dei filtri
+		//if a cascata che rendono "non-case sensitive" l'inserimento dei filtri
 		if(Filters.contains("cities")) {
 			Filters=Filters.replace("cities", "Cities");
 		}

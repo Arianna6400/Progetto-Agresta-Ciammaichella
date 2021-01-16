@@ -24246,5 +24246,41 @@
     "date_iso": "2021-01-09T12:00:00Z",
     "date": 1610193600,
     "value": 1.02
+  },
+  {
+    "name": "Pescara",
+    "date_iso": "2021-01-16T12:00:00Z",
+    "date": 1610798400,
+    "value": 1.14
+  },
+  {
+    "name": "Milan",
+    "date_iso": "2021-01-16T12:00:00Z",
+    "date": 1610798400,
+    "value": 0.94
+  },
+  {
+    "name": "Rome",
+    "date_iso": "2021-01-16T12:00:00Z",
+    "date": 1610798400,
+    "value": 1.21
+  },
+  {
+    "name": "Le Grazie di Ancona",
+    "date_iso": "2021-01-16T12:00:00Z",
+    "date": 1610798400,
+    "value": 1.0
+  },
+  {
+    "name": "Venice",
+    "date_iso": "2021-01-16T12:00:00Z",
+    "date": 1610798400,
+    "value": 0.86
+  },
+  {
+    "name": "Florence",
+    "date_iso": "2021-01-16T12:00:00Z",
+    "date": 1610798400,
+    "value": 1.01
   }
 ]

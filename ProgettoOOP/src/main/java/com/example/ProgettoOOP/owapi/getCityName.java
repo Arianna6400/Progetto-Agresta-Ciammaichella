@@ -1,10 +1,10 @@
 package com.example.ProgettoOOP.owapi;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
 import com.example.ProgettoOOP.Types.UVData;
 import com.google.gson.Gson;
 
@@ -22,12 +22,12 @@ public class getCityName extends OWClass {
 	
 	/**Metodo che chiama il nome delle città dalle API di OpenWeather
 	 * tramite latitudine e longitudine
-	 * @param lat
-	 * @param lon
+	 * @param lat latitudine
+	 * @param lon longitudine
 	 * @return Stringa in JSON 
-	 * @throws Exception
+	 * @throws IOException se si verifica un problema di Input/Output
 	 */
-	public static String call(double lat,double lon) throws Exception {
+	public static String call(double lat,double lon) throws IOException {
 		  StringBuilder urlToRead = new StringBuilder("http://api.openweathermap.org/data/2.5/weather");
 		  urlToRead.append("?lat="+lat+"&lon="+lon+"&appid="+APIKey); 
 		  StringBuilder result = new StringBuilder();

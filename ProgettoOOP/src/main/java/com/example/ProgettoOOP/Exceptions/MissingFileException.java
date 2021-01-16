@@ -19,7 +19,7 @@ public class MissingFileException extends IOException{
 
 	/**Lancia un messaggio personalizzato nel caso
 	 * venga lanciata l'eccezione
-	 * @param message
+	 * @param message messaggio di output dell'eccezione
 	 */
 	public MissingFileException(String message) {
 		super(message);

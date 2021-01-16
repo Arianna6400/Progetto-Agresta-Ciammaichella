@@ -1,10 +1,15 @@
 package com.example.ProgettoOOP.owapi;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Paths;
 
+import com.example.ProgettoOOP.Exceptions.MissingFileException;
 import com.example.ProgettoOOP.Types.UVData;
 import com.google.gson.Gson;
 
@@ -16,19 +21,27 @@ import com.google.gson.Gson;
 
 public class getUV extends OWClass {
 	
-	public getUV(double lat, double lon) {
+	public getUV(double lat, double lon) throws MissingFileException {
 		super(lat, lon);
 	}
 	
 	/**Metodo che chiama i valori dei raggi UV dalle API di
 	 * OpenWeather tramite latitudine e longitudine, 
 	 * chiamando getCityName
-	 * @param lat
-	 * @param lon
+	 * @param lat latitudine
+	 * @param lon longitudine
 	 * @return Un tipo UVData da convertire in JSON
-	 * @throws Exception
+	 * @throws IOException se si verifica un problema di Input/Output
 	 */
-	public static UVData call(double lat,double lon) throws Exception {
+	public static UVData call(double lat,double lon) throws IOException {
+		try {
+			BufferedReader reader = Files.newBufferedReader(Paths.get("CityUVFile/APIkey.txt"));
+			APIKey=reader.readLine();
+			reader.close();
+		}
+		catch(NoSuchFileException e) {
+			throw new MissingFileException(".txt file not found in the directory");
+		}
 		  StringBuilder urlToRead = new StringBuilder("http://api.openweathermap.org/data/2.5/uvi");
 		  urlToRead.append("?lat="+lat+"&lon="+lon+"&appid="+APIKey); 
 		  StringBuilder result = new StringBuilder();

@@ -3,7 +3,7 @@ package com.example.ProgettoOOP.util;
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.UVData;
 
-/**Classeche immagazina in un vector
+/**Classe che immagazina in un vector
  * ogni città trovata all'interno del dataset
  * @author Arianna Agresta
  * @author Marco Ciammaichella

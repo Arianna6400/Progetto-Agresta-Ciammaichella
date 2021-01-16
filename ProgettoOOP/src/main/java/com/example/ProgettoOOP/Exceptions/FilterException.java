@@ -16,7 +16,7 @@ public class FilterException extends Exception {
 
 	/**Lancia un messaggio perzonalizzato in caso
 	 * venga chiamata l'eccezione
-	 * @param message 
+	 * @param message messaggio di output dell'eccezione 
 	 */
 	public FilterException(String message) {
 		super(message);

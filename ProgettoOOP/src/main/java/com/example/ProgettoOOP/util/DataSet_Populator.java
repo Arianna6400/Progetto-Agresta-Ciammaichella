@@ -12,7 +12,8 @@ import com.example.ProgettoOOP.owapi.*;
 
 public class DataSet_Populator {
 	/**Funzione che legge le città iniserite dall'utente in "Città.json"
-	 * e popola il dataset ("uv.json") con dati riguardanti i raggi uv ogni ora 
+	 * e popola il dataset ("uv.json") con dati riguardanti i raggi uv ogni ora
+	 * @throws IOException se si verifica un problema di Input/Output
 	 */
 	public static void sleep() throws IOException{
 		try {

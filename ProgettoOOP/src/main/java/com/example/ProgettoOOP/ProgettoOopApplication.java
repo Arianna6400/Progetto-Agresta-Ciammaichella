@@ -1,5 +1,7 @@
 package com.example.ProgettoOOP;
 
+import java.io.IOException;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -14,9 +16,14 @@ import com.example.ProgettoOOP.util.DataSet_Populator;
 @SpringBootApplication
 public class ProgettoOopApplication {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		SpringApplication.run(ProgettoOopApplication.class, args);
-		DataSet_Populator.sleep(); 
+		try {
+			DataSet_Populator.sleep(); 
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
