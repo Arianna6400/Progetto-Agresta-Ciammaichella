@@ -84,4 +84,4 @@ In questo caso, l'utente ottiene in formato JSON un vettore di statistiche per l
  - Non è necessario inserire tutti i tipi di filtraggio, infatti l'utente può utilizzarne uno, due o tre contemporaneamente. In quel caso si otterrebbero solamente le statistiche relative al filtraggio desiderato.
  - All'interno del programma è stato inserito un controllo riguardante l'uso delle lettere maiuscole e minuscole, rendendo il servizio "non case-sensitive". Ad esempio, se l'utente inserisse "max" al posto di "Max", il programma funzionerebbe correttamente poiché sostituisce automaticamente il nome del filtro sbagliato con quello corretto. [Vedi all'interno del programma.](https://github.com/Arianna6400/Progetto-Agresta-Ciammaichella/blob/master/ProgettoOOP/src/main/java/com/example/ProgettoOOP/util/StatsParser.java) 
 
-**Filtraggio di valori e statistiche**
+## Filtraggio di valori e statistiche
