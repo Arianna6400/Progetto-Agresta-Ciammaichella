@@ -11,6 +11,7 @@ import com.example.ProgettoOOP.Types.UVData;
  */
 
 public class Time {
+	
 	/**Funzione che calcola due date in UNIX a partire da 
 	 * due interi (che rappresentano un range di giorni)
 	 * e l'ultima data presente nel dataset

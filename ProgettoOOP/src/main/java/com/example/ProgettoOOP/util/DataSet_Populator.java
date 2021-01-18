@@ -5,14 +5,14 @@ import java.util.Vector;
 import com.example.ProgettoOOP.Types.*;
 import com.example.ProgettoOOP.owapi.*;
 
-/**Classe che popola il dataset ogni ora con i dati ricevuti dalle api di OpenWeather
+/**Classe che popola il dataset ogni ora con i dati ricevuti dalle API di OpenWeather
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
 
 public class DataSet_Populator {
 	/**Funzione che legge le città iniserite dall'utente in "Città.json"
-	 * e popola il dataset ("uv.json") con dati riguardanti i raggi uv ogni ora
+	 * e popola il dataset ("Uv.json") con dati riguardanti i raggi uv ogni ora
 	 * @throws IOException se si verifica un problema di Input/Output
 	 */
 	public static void sleep() throws IOException{

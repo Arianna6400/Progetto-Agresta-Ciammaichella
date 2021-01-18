@@ -31,8 +31,8 @@ public class DataBase {
 			return strJson ;
 		}
 		
-		/**Funzione che legge dal file "uv.json" e trasforma i dati in json
-		 * @return stringa in json contenente l'intero dataset letto da "uv.json"
+		/**Funzione che legge dal file "Uv.json" e trasforma i dati in json
+		 * @return stringa in json contenente l'intero dataset letto da "Uv.json"
 		 * @throws IOException se si verifica un problema di Input/Output nella funzione "Reader.getVectorUV()"
 		 */
 		

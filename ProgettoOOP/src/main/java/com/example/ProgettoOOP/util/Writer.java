@@ -14,10 +14,12 @@ import com.google.gson.GsonBuilder;
  */
 
 public class Writer {
-	/**Funzione che scrive all'interno del file "uv.json" i dati 
-	 * che riceve sotto forma di vector di UVData
+	
+	/**Funzione che scrive all'interno del file "Uv.json" i dati 
+	 * che riceve sotto forma di Vector di UVData
 	 * @param DataSet vector di UVData contenente i nuovi dati appena arrivati da OpenWeather
 	 */
+	
   public static void populate(Vector<UVData> DataSet) {
     try {
 	  BufferedWriter myWriter = new BufferedWriter(new FileWriter("CityUVFile/Uv.json",true));

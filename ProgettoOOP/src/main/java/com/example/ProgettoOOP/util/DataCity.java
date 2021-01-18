@@ -15,8 +15,8 @@ public class DataCity {
 	
 	/**Funzione che calcola le statistiche per ogni città 
 	 * all'interno dell'intero dataset
-	 * @param CitiesName vector di stringhe contenente tutte le città presenti nel dataset
-	 * @return una stringa in json contenente un vector di result popolato da ogni città con le rispettive statistiche
+	 * @param CitiesName Vector di stringhe contenente tutte le città presenti nel dataset
+	 * @return una stringa in json contenente un Vector di result popolato da ogni città con le rispettive statistiche
 	 */
 	
 	public static String getResult (Vector<String> CitiesName) {

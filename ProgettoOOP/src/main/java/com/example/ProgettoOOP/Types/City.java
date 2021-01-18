@@ -1,6 +1,6 @@
 package com.example.ProgettoOOP.Types;
 
-/**Classe usata per immagazinare i dati 
+/**Classe usata per immagazzinare i dati 
  * provenienti dal file "Città.json"
  * @author Arianna Agresta
  * @author Marco Ciammaichella

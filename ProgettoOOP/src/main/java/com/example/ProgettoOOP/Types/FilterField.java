@@ -2,7 +2,7 @@ package com.example.ProgettoOOP.Types;
 
 import java.util.Vector;
 
-/**Classe usata per immagazinare  il tipo di filtro 
+/**Classe usata per immagazzinare  il tipo di filtro 
  * richiesto dall'utente nei campi "value","max","min","avg" o "var"
  * @author Arianna Agresta
  * @author Marco Ciammaichella

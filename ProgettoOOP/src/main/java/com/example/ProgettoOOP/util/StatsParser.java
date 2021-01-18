@@ -16,6 +16,7 @@ import com.google.gson.Gson;
  */
 
 public class StatsParser {
+	
 	/**Funzione che elimina dal dataset totale ogni ogetto json che non 
 	 * rispetta i filtri inseriti dall'utente,successivamente calcola i filtri su di esso
 	 * filtrando anch'essi se richiesto
@@ -24,8 +25,11 @@ public class StatsParser {
 	 * @throws IOException  se si verifica un problema di Input/Output
 	 * @throws FilterException se si verifica un errore di input dei filtri da parte dell'utente
 	 */
+	
 	public static String getBody(String Filters) throws IOException, FilterException {
+		
 		//if a cascata che rendono "non-case sensitive" l'inserimento dei filtri
+		
 		if(Filters.contains("cities")) {
 			Filters=Filters.replace("cities", "Cities");
 		}
@@ -57,7 +61,7 @@ public class StatsParser {
 			Filters=Filters.replace("notincluded", "NotIncluded");
 		}
 		Gson gson = new Gson();
-		boolean flag = false;//variabile booleana utilizzata per capire quando uscire dal ciclo 
+		boolean flag = false; //variabile booleana utilizzata per capire quando uscire dal ciclo 
 		Vector<Result> Stats = new Vector<Result>();
 		BodyStats body = gson.fromJson(Filters, BodyStats.class);
 		Vector<UVData> DataSet= Reader.getVectorUV();
@@ -72,7 +76,7 @@ public class StatsParser {
 				flag=true;                          
 				break;
 			}
-				for(String s : CitiesNames) {                //questo ciclo calcola le ststs per ogni città all'interno del dataset filtrato 
+				for(String s : CitiesNames) {                //questo ciclo calcola le stats per ogni città all'interno del dataset filtrato 
 					Result result = new Result();
 					result.Max=Massimo.getMassimo(s,DataSetBackup);
 					result.Min=Minimo.getMinimo(s,DataSetBackup);

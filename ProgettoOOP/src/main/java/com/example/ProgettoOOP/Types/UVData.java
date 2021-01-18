@@ -1,7 +1,7 @@
 package com.example.ProgettoOOP.Types;
 
-/**Classe usata per immagazinare dati ricevuti da OpenWeather
- * da immagazinare nel DataSet in "uv.json"
+/**Classe usata per immagazzinare dati ricevuti da OpenWeather
+ * da inserire nel DataSet in "Uv.json"
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */

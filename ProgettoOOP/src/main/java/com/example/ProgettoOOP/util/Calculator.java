@@ -3,15 +3,15 @@ package com.example.ProgettoOOP.util;
 import java.util.Vector;
 import com.example.ProgettoOOP.Types.UVData;
 
-/**Classe che immagazina in un vector
+/**Classe che inserisce in un Vector
  * ogni città trovata all'interno del dataset
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
 public class Calculator {
 	
-	/**Funzione che scorre l'intero dataset e immagazina ogni 
-	 * nuovo "name" trovato in un vector
+	/**Funzione che scorre l'intero dataset e immagazzina ogni 
+	 * nuovo "name" trovato in un Vector
 	 * @param DataSet il dataset (totale o filtrato) su cui la funzione lavora
 	 * @return Un vector di stringhe contenente ogni nome di città trovato nel dataset (in singola copia)
 	 */

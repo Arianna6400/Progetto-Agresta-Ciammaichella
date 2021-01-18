@@ -1,7 +1,7 @@
 package com.example.ProgettoOOP.Types;
 
-/**Classe usata per immagazinare i dati da stampare 
- * in output per le chiamate di tipo /stats
+/**Classe usata per immagazzinare i dati da stampare 
+ * in output per le chiamate di tipo GET/stats o POST/stats
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */

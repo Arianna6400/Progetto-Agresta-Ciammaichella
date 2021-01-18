@@ -17,10 +17,12 @@ import com.google.gson.reflect.TypeToken;
  */
 
 public class Reader {
-	/**Funzione che legge dal file "uv.json" e inserisce i dati in un vector di UVData
-	 * @return un vector di UVData contenente i valori all'interno del dataset
+	
+	/**Funzione che legge dal file "Uv.json" e inserisce i dati in un Vector di UVData
+	 * @return un Vector di UVData contenente i valori all'interno del dataset
 	 * @throws IOException se si verifica un problema di Input/Output
 	 */
+	
 	public static Vector<UVData> getVectorUV() throws IOException{
 		Vector<UVData> DataSet;
 		try {
@@ -34,8 +36,8 @@ public class Reader {
 		}
 			return DataSet;
 	}
-	/**Funzione che legge dal file "Città.json" e inserisce i dati in un vector di City
-	 * @return un vector di City contenente i dati riguardanti le città inseriti dall'utente
+	/**Funzione che legge dal file "Città.json" e inserisce i dati in un Vector di City
+	 * @return un Vector di City contenente i dati riguardanti le città inseriti dall'utente
 	 * @throws IOException se si verifica un problema di Input/Output
 	 */
 	public static Vector<City> getVectorCity() throws IOException{

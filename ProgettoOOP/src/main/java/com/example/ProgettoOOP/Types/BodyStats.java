@@ -2,8 +2,8 @@ package com.example.ProgettoOOP.Types;
 
 import java.util.Vector;
 
-/**Classe usata per leggere l' input il JSON dei 
- * filtri riguardanti il metodo POST stats
+/**Classe usata per leggere l' input del JSON dei 
+ * filtri riguardanti la chiamata POST/stats
  * @author Arianna Agresta
  * @author Marco Ciammaichella
  */
