@@ -38,7 +38,7 @@ public class MaxFilter {
 					}
 				}
 			}
-			else if(!body.Max.Included.isEmpty()) {
+			else if(body.Max.Included != null) {
 				if(body.Max.Included.size()!=2) {
 					throw new FilterException("Illegal number of inputs");
 				}
@@ -48,7 +48,7 @@ public class MaxFilter {
 					}
 				}
 			}
-			else if(!body.Max.NotIncluded.isEmpty()) {
+			else if(body.Max.NotIncluded != null) {
 				if(body.Max.NotIncluded.size()!=2) {
 					throw new FilterException("Illegal number of inputs");
 				}

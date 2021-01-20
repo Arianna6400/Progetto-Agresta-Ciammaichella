@@ -39,7 +39,7 @@ public class MinFilter {
 					}
 				}
 			}
-			else if(!body.Min.Included.isEmpty()) {
+			else if(body.Min.Included!= null) {
 				if(body.Min.Included.size()!=2) {
 					throw new FilterException("Illegal number of inputs");
 				}
@@ -49,7 +49,7 @@ public class MinFilter {
 					}
 				}
 			}
-			else if(!body.Min.NotIncluded.isEmpty()) {
+			else if(body.Min.NotIncluded!= null) {
 				if(body.Min.NotIncluded.size()!=2) {
 					throw new FilterException("Illegal number of inputs");
 				}

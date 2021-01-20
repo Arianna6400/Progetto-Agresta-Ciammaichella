@@ -18,12 +18,6 @@
     "value": 1.15
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-05T12:00:00Z",
-    "date": 1609848000,
-    "value": 1.05
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-05T12:00:00Z",
     "date": 1609848000,
@@ -52,12 +46,6 @@
     "date_iso": "2021-01-05T12:00:00Z",
     "date": 1609848000,
     "value": 1.15
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-05T12:00:00Z",
-    "date": 1609848000,
-    "value": 1.05
   },
   {
     "name": "Venice",
@@ -90,10 +78,34 @@
     "value": 1.19
   },
   {
-    "name": "Ancona",
+    "name": "Venice",
+    "date_iso": "2021-01-06T12:00:00Z",
+    "date": 1609934400,
+    "value": 0.88
+  },
+  {
+    "name": "Florence",
     "date_iso": "2021-01-06T12:00:00Z",
     "date": 1609934400,
     "value": 1.05
+  },
+  {
+    "name": "Pescara",
+    "date_iso": "2021-01-06T12:00:00Z",
+    "date": 1609934400,
+    "value": 1.15
+  },
+  {
+    "name": "Milan",
+    "date_iso": "2021-01-06T12:00:00Z",
+    "date": 1609934400,
+    "value": 0.91
+  },
+  {
+    "name": "Rome",
+    "date_iso": "2021-01-06T12:00:00Z",
+    "date": 1609934400,
+    "value": 1.19
   },
   {
     "name": "Venice",
@@ -126,48 +138,6 @@
     "value": 1.19
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-06T12:00:00Z",
-    "date": 1609934400,
-    "value": 1.05
-  },
-  {
-    "name": "Venice",
-    "date_iso": "2021-01-06T12:00:00Z",
-    "date": 1609934400,
-    "value": 0.88
-  },
-  {
-    "name": "Florence",
-    "date_iso": "2021-01-06T12:00:00Z",
-    "date": 1609934400,
-    "value": 1.05
-  },
-  {
-    "name": "Pescara",
-    "date_iso": "2021-01-06T12:00:00Z",
-    "date": 1609934400,
-    "value": 1.15
-  },
-  {
-    "name": "Milan",
-    "date_iso": "2021-01-06T12:00:00Z",
-    "date": 1609934400,
-    "value": 0.91
-  },
-  {
-    "name": "Rome",
-    "date_iso": "2021-01-06T12:00:00Z",
-    "date": 1609934400,
-    "value": 1.19
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-06T12:00:00Z",
-    "date": 1609934400,
-    "value": 1.05
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-06T12:00:00Z",
     "date": 1609934400,
@@ -198,10 +168,34 @@
     "value": 1.24
   },
   {
-    "name": "Ancona",
+    "name": "Venice",
     "date_iso": "2021-01-07T12:00:00Z",
     "date": 1610020800,
-    "value": 1.07
+    "value": 0.89
+  },
+  {
+    "name": "Florence",
+    "date_iso": "2021-01-07T12:00:00Z",
+    "date": 1610020800,
+    "value": 1.03
+  },
+  {
+    "name": "Pescara",
+    "date_iso": "2021-01-07T12:00:00Z",
+    "date": 1610020800,
+    "value": 1.19
+  },
+  {
+    "name": "Milan",
+    "date_iso": "2021-01-07T12:00:00Z",
+    "date": 1610020800,
+    "value": 0.9
+  },
+  {
+    "name": "Rome",
+    "date_iso": "2021-01-07T12:00:00Z",
+    "date": 1610020800,
+    "value": 1.24
   },
   {
     "name": "Venice",
@@ -234,48 +228,6 @@
     "value": 1.24
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-07T12:00:00Z",
-    "date": 1610020800,
-    "value": 1.07
-  },
-  {
-    "name": "Venice",
-    "date_iso": "2021-01-07T12:00:00Z",
-    "date": 1610020800,
-    "value": 0.89
-  },
-  {
-    "name": "Florence",
-    "date_iso": "2021-01-07T12:00:00Z",
-    "date": 1610020800,
-    "value": 1.03
-  },
-  {
-    "name": "Pescara",
-    "date_iso": "2021-01-07T12:00:00Z",
-    "date": 1610020800,
-    "value": 1.19
-  },
-  {
-    "name": "Milan",
-    "date_iso": "2021-01-07T12:00:00Z",
-    "date": 1610020800,
-    "value": 0.9
-  },
-  {
-    "name": "Rome",
-    "date_iso": "2021-01-07T12:00:00Z",
-    "date": 1610020800,
-    "value": 1.24
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-07T12:00:00Z",
-    "date": 1610020800,
-    "value": 1.07
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-07T12:00:00Z",
     "date": 1610020800,
@@ -306,10 +258,34 @@
     "value": 1.16
   },
   {
-    "name": "Ancona",
+    "name": "Venice",
     "date_iso": "2021-01-08T12:00:00Z",
     "date": 1610107200,
-    "value": 1.03
+    "value": 0.9
+  },
+  {
+    "name": "Florence",
+    "date_iso": "2021-01-08T12:00:00Z",
+    "date": 1610107200,
+    "value": 1.0
+  },
+  {
+    "name": "Pescara",
+    "date_iso": "2021-01-08T12:00:00Z",
+    "date": 1610107200,
+    "value": 1.13
+  },
+  {
+    "name": "Milan",
+    "date_iso": "2021-01-08T12:00:00Z",
+    "date": 1610107200,
+    "value": 0.91
+  },
+  {
+    "name": "Rome",
+    "date_iso": "2021-01-08T12:00:00Z",
+    "date": 1610107200,
+    "value": 1.16
   },
   {
     "name": "Venice",
@@ -342,12 +318,6 @@
     "value": 1.16
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-08T12:00:00Z",
-    "date": 1610107200,
-    "value": 1.03
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-08T12:00:00Z",
     "date": 1610107200,
@@ -378,12 +348,6 @@
     "value": 1.16
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-08T12:00:00Z",
-    "date": 1610107200,
-    "value": 1.03
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-08T12:00:00Z",
     "date": 1610107200,
@@ -412,48 +376,6 @@
     "date_iso": "2021-01-08T12:00:00Z",
     "date": 1610107200,
     "value": 1.16
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-08T12:00:00Z",
-    "date": 1610107200,
-    "value": 1.03
-  },
-  {
-    "name": "Venice",
-    "date_iso": "2021-01-08T12:00:00Z",
-    "date": 1610107200,
-    "value": 0.9
-  },
-  {
-    "name": "Florence",
-    "date_iso": "2021-01-08T12:00:00Z",
-    "date": 1610107200,
-    "value": 1.0
-  },
-  {
-    "name": "Pescara",
-    "date_iso": "2021-01-08T12:00:00Z",
-    "date": 1610107200,
-    "value": 1.13
-  },
-  {
-    "name": "Milan",
-    "date_iso": "2021-01-08T12:00:00Z",
-    "date": 1610107200,
-    "value": 0.91
-  },
-  {
-    "name": "Rome",
-    "date_iso": "2021-01-08T12:00:00Z",
-    "date": 1610107200,
-    "value": 1.16
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-08T12:00:00Z",
-    "date": 1610107200,
-    "value": 1.03
   },
   {
     "name": "Venice",
@@ -484,12 +406,6 @@
     "date_iso": "2021-01-09T12:00:00Z",
     "date": 1610193600,
     "value": 1.23
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-09T12:00:00Z",
-    "date": 1610193600,
-    "value": 1.04
   },
   {
     "name": "Venice",
@@ -520,12 +436,6 @@
     "date_iso": "2021-01-09T12:00:00Z",
     "date": 1610193600,
     "value": 1.23
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-09T12:00:00Z",
-    "date": 1610193600,
-    "value": 1.04
   },
   {
     "name": "Venice",
@@ -556,12 +466,6 @@
     "date_iso": "2021-01-10T12:00:00Z",
     "date": 1610280000,
     "value": 1.27
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-10T12:00:00Z",
-    "date": 1610280000,
-    "value": 1.05
   },
   {
     "name": "Venice",
@@ -594,12 +498,6 @@
     "value": 1.27
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-10T12:00:00Z",
-    "date": 1610280000,
-    "value": 1.05
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-10T12:00:00Z",
     "date": 1610280000,
@@ -630,12 +528,6 @@
     "value": 1.27
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-10T12:00:00Z",
-    "date": 1610280000,
-    "value": 1.05
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-10T12:00:00Z",
     "date": 1610280000,
@@ -666,10 +558,34 @@
     "value": 1.36
   },
   {
-    "name": "Ancona",
+    "name": "Venice",
     "date_iso": "2021-01-11T12:00:00Z",
     "date": 1610366400,
-    "value": 1.14
+    "value": 0.93
+  },
+  {
+    "name": "Florence",
+    "date_iso": "2021-01-11T12:00:00Z",
+    "date": 1610366400,
+    "value": 1.08
+  },
+  {
+    "name": "Pescara",
+    "date_iso": "2021-01-11T12:00:00Z",
+    "date": 1610366400,
+    "value": 1.29
+  },
+  {
+    "name": "Milan",
+    "date_iso": "2021-01-11T12:00:00Z",
+    "date": 1610366400,
+    "value": 0.94
+  },
+  {
+    "name": "Rome",
+    "date_iso": "2021-01-11T12:00:00Z",
+    "date": 1610366400,
+    "value": 1.36
   },
   {
     "name": "Venice",
@@ -702,12 +618,6 @@
     "value": 1.36
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-11T12:00:00Z",
-    "date": 1610366400,
-    "value": 1.14
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-11T12:00:00Z",
     "date": 1610366400,
@@ -736,48 +646,6 @@
     "date_iso": "2021-01-11T12:00:00Z",
     "date": 1610366400,
     "value": 1.36
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-11T12:00:00Z",
-    "date": 1610366400,
-    "value": 1.14
-  },
-  {
-    "name": "Venice",
-    "date_iso": "2021-01-11T12:00:00Z",
-    "date": 1610366400,
-    "value": 0.93
-  },
-  {
-    "name": "Florence",
-    "date_iso": "2021-01-11T12:00:00Z",
-    "date": 1610366400,
-    "value": 1.08
-  },
-  {
-    "name": "Pescara",
-    "date_iso": "2021-01-11T12:00:00Z",
-    "date": 1610366400,
-    "value": 1.29
-  },
-  {
-    "name": "Milan",
-    "date_iso": "2021-01-11T12:00:00Z",
-    "date": 1610366400,
-    "value": 0.94
-  },
-  {
-    "name": "Rome",
-    "date_iso": "2021-01-11T12:00:00Z",
-    "date": 1610366400,
-    "value": 1.36
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-11T12:00:00Z",
-    "date": 1610366400,
-    "value": 1.14
   },
   {
     "name": "Venice",
@@ -810,12 +678,6 @@
     "value": 1.3
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-12T12:00:00Z",
-    "date": 1610452800,
-    "value": 1.11
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-12T12:00:00Z",
     "date": 1610452800,
@@ -846,12 +708,6 @@
     "value": 1.3
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-12T12:00:00Z",
-    "date": 1610452800,
-    "value": 1.11
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-12T12:00:00Z",
     "date": 1610452800,
@@ -882,12 +738,6 @@
     "value": 1.22
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-13T12:00:00Z",
-    "date": 1610539200,
-    "value": 1.09
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-13T12:00:00Z",
     "date": 1610539200,
@@ -918,12 +768,6 @@
     "value": 1.22
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-13T12:00:00Z",
-    "date": 1610539200,
-    "value": 1.09
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-13T12:00:00Z",
     "date": 1610539200,
@@ -952,12 +796,6 @@
     "date_iso": "2021-01-13T12:00:00Z",
     "date": 1610539200,
     "value": 1.22
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-13T12:00:00Z",
-    "date": 1610539200,
-    "value": 1.09
   },
   {
     "name": "Venice",
@@ -990,12 +828,6 @@
     "value": 1.43
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-14T12:00:00Z",
-    "date": 1610625600,
-    "value": 1.29
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-14T12:00:00Z",
     "date": 1610625600,
@@ -1026,12 +858,6 @@
     "value": 1.44
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-14T12:00:00Z",
-    "date": 1610625600,
-    "value": 1.29
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-14T12:00:00Z",
     "date": 1610625600,
@@ -1060,12 +886,6 @@
     "date_iso": "2021-01-14T12:00:00Z",
     "date": 1610625600,
     "value": 1.44
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-14T12:00:00Z",
-    "date": 1610625600,
-    "value": 1.29
   },
   {
     "name": "Venice",
@@ -1098,12 +918,6 @@
     "value": 1.2
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-15T12:00:00Z",
-    "date": 1610712000,
-    "value": 1.1
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-15T12:00:00Z",
     "date": 1610712000,
@@ -1132,12 +946,6 @@
     "date_iso": "2021-01-16T12:00:00Z",
     "date": 1610798400,
     "value": 1.22
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-16T12:00:00Z",
-    "date": 1610798400,
-    "value": 1.0
   },
   {
     "name": "Venice",
@@ -1170,12 +978,6 @@
     "value": 1.2
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-17T12:00:00Z",
-    "date": 1610971200,
-    "value": 1.1
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-17T12:00:00Z",
     "date": 1610971200,
@@ -1206,12 +1008,6 @@
     "value": 1.14
   },
   {
-    "name": "Ancona",
-    "date_iso": "2021-01-18T12:00:00Z",
-    "date": 1610971200,
-    "value": 1.01
-  },
-  {
     "name": "Venice",
     "date_iso": "2021-01-18T12:00:00Z",
     "date": 1610971200,
@@ -1240,12 +1036,6 @@
     "date_iso": "2021-01-19T12:00:00Z",
     "date": 1611057600,
     "value": 1.39
-  },
-  {
-    "name": "Ancona",
-    "date_iso": "2021-01-19T12:00:00Z",
-    "date": 1611057600,
-    "value": 1.16
   },
   {
     "name": "Venice",

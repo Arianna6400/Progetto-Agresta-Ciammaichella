@@ -23,7 +23,7 @@ public class CitiesFilter {
 	public static Vector<UVData> getCityFilter (BodyData body,Vector<UVData> DataSet){
 		boolean flag= false;
 		Vector<UVData> toRemove=new Vector<UVData>(); //Vettore da popolare e poi da rimuovere
-		if(!body.Cities.isEmpty()) {
+		if(body.Cities!= null) {
 			for(UVData d : DataSet) {
 				for(String name : body.Cities) {
 					if(d.name.equals(name)) {
@@ -52,7 +52,7 @@ public class CitiesFilter {
 	public static Vector<UVData> getCityFilter (BodyStats body,Vector<UVData> DataSet){
 		boolean flag= false;
 		Vector<UVData> toRemove=new Vector<UVData>(); //Vettore da popolare e poi da rimuovere
-		if(!body.Cities.isEmpty()) {
+		if(body.Cities!= null) {
 			for(UVData d : DataSet) {
 				for(String name : body.Cities) {
 					if(d.name.equals(name)) {

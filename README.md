@@ -77,9 +77,9 @@ La seguente tabella mostra i filtri applicabili dall’utente nella chiamata POS
 
 Un esempio del funzionamento del filtraggio applicabile può essere:
 
-` {"Cities":["Pescara","Ancona"], "Range": 7,"Min":{"Greater": 0.8} }  `
+` {"Cities":["Pescara","Rome"], "Range": 7,"Min":{"Greater": 0.8} }  `
 
-In questo caso, l'utente ottiene in formato JSON un vettore di statistiche per le città inserite (Pescara, Ancona), con un range settimanale, il cui valore "minimo" è superiore a 0.8. Se l'utente inserisse ad esempio  ` "Range": 10 ` , otterrebbe le statistiche del Dataset filtrato a intervalli di dieci giorni.  
+In questo caso, l'utente ottiene in formato JSON un vettore di statistiche per le città inserite (Pescara, Roma), con un range settimanale, il cui valore "minimo" è superiore a 0.8. Se l'utente inserisse ad esempio  ` "Range": 10 ` , otterrebbe le statistiche del Dataset filtrato a intervalli di dieci giorni.  
 
 **NOTA BENE**: 
 

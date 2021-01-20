@@ -38,7 +38,7 @@ public class AvgFilter {
 					}
 				}
 			}
-			else if(!body.Avg.Included.isEmpty()) {
+			else if(body.Avg.Included!= null) {
 				if(body.Avg.Included.size()!=2) {
 					throw new FilterException("Illegal number of inputs");
 				}
@@ -48,7 +48,7 @@ public class AvgFilter {
 					}
 				}
 			}
-			else if(!body.Avg.NotIncluded.isEmpty()) {
+			else if(body.Avg.NotIncluded!= null) {
 				if(body.Avg.NotIncluded.size()!=2) {
 					throw new FilterException("Illegal number of inputs");
 				}

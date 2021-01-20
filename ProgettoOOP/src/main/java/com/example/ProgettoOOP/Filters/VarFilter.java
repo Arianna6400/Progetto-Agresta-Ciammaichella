@@ -37,7 +37,7 @@ public class VarFilter {
 					}
 				}
 			}
-			else if(!body.Var.Included.isEmpty()) {
+			else if(body.Var.Included!= null) {
 				if(body.Var.Included.size()!=2) {
 					throw new FilterException("Illegal number of inputs");
 				}
@@ -47,7 +47,7 @@ public class VarFilter {
 					}
 				}
 			}
-			else if(!body.Var.NotIncluded.isEmpty()) {
+			else if(body.Var.NotIncluded != null) {
 				if(body.Var.NotIncluded.size()!=2) {
 					throw new FilterException("Illegal number of inputs");
 				}

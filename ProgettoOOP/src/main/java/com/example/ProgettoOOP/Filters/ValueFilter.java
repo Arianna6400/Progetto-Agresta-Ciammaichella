@@ -38,7 +38,7 @@ public class ValueFilter {
 					}
 				}
 			}
-			else if(!body.Value.Included.isEmpty()) {
+			else if(body.Value.Included != null) {
 				if(body.Value.Included.size()!=2) {
 					throw new FilterException("Illegal number of inputs");
 				}
@@ -48,7 +48,7 @@ public class ValueFilter {
 					}
 				}
 			}
-			else if(!body.Value.NotIncluded.isEmpty()) {
+			else if(body.Value.NotIncluded != null) {
 				if(body.Value.NotIncluded.size()!=2) {
 					throw new FilterException("Illegal number of inputs");
 				}
